@@ -112,7 +112,7 @@ class Darkness4869 {
             this.setBodyId(this.getRequestURI().replaceAll("/", ""));
         }
         document.body.id = this.getBodyId();
-        this.render();
+        this.style();
     }
     /**
      * Styling the application
@@ -136,23 +136,6 @@ class Darkness4869 {
             document.head.appendChild(link);
         }
         this.resizeApplication();
-    }
-    /**
-     * Adding the script for React to render on the page
-     * @returns {void}
-     */
-    render() {
-        const body = document.body;
-        const script = document.createElement("script");
-        this.setMimeType("text/babel");
-        if (body.className == null) {
-            script.src = `/Public/Scripts/${this.getBodyId()}.js`;
-        } else {
-            script.src = "/Public/Scripts/HTTP404.js";
-        }
-        script.type = this.getMimeType();
-        body.appendChild(script);
-        this.style();
     }
     /**
      * Resizing the application which depends on the client's size
