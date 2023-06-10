@@ -112,7 +112,7 @@ class Darkness4869 {
             this.setBodyId(this.getRequestURI().replaceAll("/", ""));
         }
         document.body.id = this.getBodyId();
-        this.render();
+        this.verifyURL();
     }
     /**
      * Styling the application
@@ -135,17 +135,23 @@ class Darkness4869 {
             link.type = this.getMimeType();
             document.head.appendChild(link);
         }
-        this.verifyURL();
+        this.resizeApplication();
     }
     /**
      * Adding the script for React to render on the page
+     * @param {number} status The status code
      * @returns {void}
      */
-    render() {
+    render(status) {
         const body = document.body;
         this.setMimeType("text/babel");
         const script = document.createElement("script");
-        script.src = `/Public/Scripts/${this.getBodyId()}.js`;
+        if (status == 200) {
+            script.src = `/Public/Scripts/${this.getBodyId()}.js`;
+        } else {
+            body.className = `error${status}`;
+            script.src = "/Public/Scripts/HTTP404.js";
+        }
         script.type = this.getMimeType();
         body.appendChild(script);
         this.style();
@@ -155,12 +161,10 @@ class Darkness4869 {
      * @returns {void}
      */
     verifyURL() {
-        fetch(window.location.href, { method: "head" }).then((Response) => {
-            if (Response.status != 200) {
-                document.body.className = Response.status;
-            }
-        });
-        this.resizeApplication();
+        fetch(window.location.href, { method: "head" }).then((Response) =>
+            this.render(Response.status)
+        );
+        this.render();
     }
     /**
      * Resizing the application which depends on the client's size
