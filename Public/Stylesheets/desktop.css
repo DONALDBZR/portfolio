@@ -1,0 +1,106 @@
+:root {
+    --textSize: var(--percentage);
+    --height: 0px;
+    --width: 0px;
+}
+body {
+    height: var(--height);
+    width: var(--width);
+    margin: calc(var(--height) * 0) calc(var(--width) * 0);
+    font-size: var(--textSize);
+}
+header {
+    height: calc(var(--height) / 10);
+}
+header #button {
+    height: var(--height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header #button button {
+    position: relative;
+    padding: calc(var(--height) * 0.03) calc(var(--width) * 0.03);
+    font-size: calc(var(--textSize) * 1.5);
+    border: calc(var(--height) / 200) solid var(--color3);
+    border-radius: calc(var(--height) / 50);
+    text-shadow: 0 0 calc(var(--height) * 0.03) var(--color2);
+    z-index: 1;
+}
+header #button button:hover {
+    border: calc(var(--height) / 200) solid var(--color4);
+    box-shadow: 0 0 calc(var(--height) * 0) var(--color2);
+}
+header #button button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--percentage);
+    height: var(--percentage);
+    z-index: -1;
+    border-radius: calc(var(--height) / 50);
+}
+header #button button:hover::before {
+    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2),
+        0 0 calc(var(--height) * 0.06) var(--color2),
+        0 0 calc(var(--height) * 0.12) var(--color2);
+}
+header #button button span {
+    position: absolute;
+    border-radius: calc(var(--height) / 200);
+    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2),
+        0 0 calc(var(--height) * 0.04) var(--color2),
+        0 0 calc(var(--height) * 0.06) var(--color2),
+        0 0 calc(var(--height) * 0.1) var(--color2),
+        0 0 calc(var(--height) * 0.2) var(--color2);
+}
+header #button button span:nth-child(1),
+header #button button span:nth-child(3) {
+    width: calc(var(--width) * (3 / 100));
+    height: calc(var(--height) * (4 / 500));
+}
+header #button button:hover span:nth-child(1),
+header #button button:hover span:nth-child(3) {
+    transform: translateX(0);
+}
+header #button button span:nth-child(2),
+header #button button span:nth-child(4) {
+    width: calc(var(--width) * (1 / 300));
+    height: calc(var(--height) * (8 / 100));
+}
+header #button button:hover span:nth-child(2),
+header #button button:hover span:nth-child(4) {
+    transform: translateY(0);
+}
+header #button button span:nth-child(1) {
+    top: calc((var(--percentage) / 2) - (var(--height) / 200));
+    left: calc(var(--width) * -0.04);
+    transform-origin: left;
+}
+header #button button:hover span:nth-child(1) {
+    left: calc(var(--percentage) / 2);
+}
+header #button button span:nth-child(3) {
+    top: calc((var(--percentage) / 2) - (var(--height) / 200));
+    right: calc(var(--width) * -0.04);
+    transform-origin: right;
+}
+header #button button:hover span:nth-child(3) {
+    right: calc(var(--percentage) / 2);
+}
+header #button button span:nth-child(2) {
+    left: calc((var(--percentage) / 2) - (var(--width) / 500));
+    top: calc(var(--height) * -0.1);
+    transform-origin: top;
+}
+header #button button:hover span:nth-child(2) {
+    top: calc(var(--percentage) / 2);
+}
+header #button button span:nth-child(4) {
+    left: calc((var(--percentage) / 2) - (var(--width) / 500));
+    bottom: calc(var(--height) * -0.1);
+    transform-origin: bottom;
+}
+header #button button:hover span:nth-child(4) {
+    bottom: calc(var(--percentage) / 2);
+}
