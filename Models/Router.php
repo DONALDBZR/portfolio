@@ -64,11 +64,11 @@ class Router
         $this->setPath($path);
         if ($route != "/404") {
             require_once "{$this->getRoot()}{$this->getPath()}";
-            http_response_code(200);
+            header("Content-Type: text/html; charset=UTF-8", true, 200);
             exit();
         } else {
             require_once "{$this->getRoot()}/Views/HTTP404.php";
-            http_response_code(404);
+            header("Content-Type: text/html; charset=UTF-8", true, 404);
             exit();
         }
     }
