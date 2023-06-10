@@ -112,7 +112,7 @@ class Darkness4869 {
             this.setBodyId(this.getRequestURI().replaceAll("/", ""));
         }
         document.body.id = this.getBodyId();
-        this.verifyURL();
+        this.render();
     }
     /**
      * Styling the application
@@ -139,17 +139,15 @@ class Darkness4869 {
     }
     /**
      * Adding the script for React to render on the page
-     * @param {number} status The status code
      * @returns {void}
      */
-    render(status) {
+    render() {
         const body = document.body;
-        this.setMimeType("text/babel");
         const script = document.createElement("script");
-        if (status == 200) {
+        this.setMimeType("text/babel");
+        if (body.className == null) {
             script.src = `/Public/Scripts/${this.getBodyId()}.js`;
         } else {
-            body.className = `error${status}`;
             script.src = "/Public/Scripts/HTTP404.js";
         }
         script.type = this.getMimeType();
@@ -157,22 +155,11 @@ class Darkness4869 {
         this.style();
     }
     /**
-     * Verifying the URL
-     * @returns {void}
-     */
-    verifyURL() {
-        fetch(window.location.href, { method: "head" }).then((Response) =>
-            this.render(Response.status)
-        );
-        this.render();
-    }
-    /**
      * Resizing the application which depends on the client's size
      * @returns {void}
      */
     resizeApplication() {
         const root = document.querySelector(":root");
-        const styles = getComputedStyle(root);
         const height = `${root.clientHeight}px`;
         const width = `${root.clientWidth}px`;
         root.style.setProperty("--height", height);
