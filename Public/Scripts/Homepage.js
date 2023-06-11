@@ -14,7 +14,7 @@ class Header extends Application {
         return (
             <header>
                 <div id="button">
-                    <a href="/Main">
+                    <a href="/About">
                         <span></span>
                         <span></span>
                         <span></span>
