@@ -113,39 +113,49 @@ body {
 #About header nav div,
 #Experience header,
 #Experience header nav,
-#Experience header nav div {
+#Experience header nav div,
+#Projects header,
+#Projects header nav,
+#Projects header nav div {
     height: calc(var(--height) / 20);
 }
 #About header nav,
-#Experience header nav {
+#Experience header nav,
+#Projects header nav {
     display: flex;
 }
 #About header nav div,
-#Experience header nav div {
+#Experience header nav div,
+#Projects header nav div {
     width: calc(var(--width) / 2);
 }
 #About header nav div:nth-child(2),
-#Experience header nav div:nth-child(2) {
+#Experience header nav div:nth-child(2),
+#Projects header nav div:nth-child(2) {
     display: flex;
 }
 #About header nav div:nth-child(2) div,
-#Experience header nav div:nth-child(2) div {
+#Experience header nav div:nth-child(2) div,
+#Projects header nav div:nth-child(2) div {
     width: calc(var(--width) / 6);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #About header nav div:nth-child(2) div a,
-#Experience header nav div:nth-child(2) div a {
+#Experience header nav div:nth-child(2) div a,
+#Projects header nav div:nth-child(2) div a {
     padding: calc(var(--height) / 100) calc(var(--width) / 100);
 }
 #About footer,
-#Experience footer {
+#Experience footer,
+#Projects footer {
     display: flex;
     height: calc(var(--height) / 20);
 }
 #About footer div,
-#Experience footer div {
+#Experience footer div,
+#Projects footer div {
     height: calc(var(--height) / 20);
     width: calc(var(--width) / 4);
     display: flex;
@@ -153,46 +163,55 @@ body {
     align-items: center;
 }
 #About footer div a,
-#Experience footer div a {
+#Experience footer div a,
+#Projects footer div a {
     font-size: calc(var(--textSize) * 1.6);
 }
 #About main,
-#Experience main {
+#Experience main,
+#Projects main {
     height: calc(var(--height) * 0.9);
     display: flex;
 }
 #About main div,
-#Experience main div {
+#Experience main div,
+#Projects main div {
     width: calc(var(--width) / 2);
 }
 #About main div:nth-child(1) div,
-#Experience main div:nth-child(1) div {
+#Experience main div:nth-child(1) div,
+#Projects main div:nth-child(1) div {
     padding-left: calc(var(--width) / 100);
     width: calc(var(--width) * 0.49);
     padding-top: calc(var(--height) / 25);
     height: auto;
 }
 #About main div:nth-child(1) div:nth-child(1),
-#Experience main div:nth-child(1) div:nth-child(1) {
+#Experience main div:nth-child(1) div:nth-child(1),
+#Projects main div:nth-child(1) div:nth-child(1) {
     font-size: calc(var(--textSize) * 2);
 }
 #About main div:nth-child(1) div:nth-child(2),
 #About main div:nth-child(1) div:nth-child(3),
 #Experience main div:nth-child(1) div:nth-child(2),
-#Experience main div:nth-child(1) div:nth-child(3) {
+#Experience main div:nth-child(1) div:nth-child(3),
+#Projects main div:nth-child(1) div:nth-child(2),
+#Projects main div:nth-child(1) div:nth-child(3) {
     padding-top: calc(var(--height) / 100);
 }
 #About main div p {
     margin: calc(var(--height) / 25) calc(var(--width) * 0);
     letter-spacing: calc(var(--width) / 1000);
 }
-#Experience main div {
+#Experience main div,
+#Projects main div:nth-child(2) {
     width: calc(var(--width) / 2);
     height: calc(var(--height) * 0.9);
     overflow: auto;
     scrollbar-width: none;
 }
-#Experience main div::-webkit-scrollbar {
+#Experience main div::-webkit-scrollbar,
+#Projects main div:nth-child(2)::-webkit-scrollbar {
     display: none;
 }
 #Experience main div:nth-child(2) div {
@@ -269,4 +288,54 @@ body {
 }
 #Experience main div:nth-child(2) div:nth-child(4) {
     display: block;
+}
+#Projects main div:nth-child(2) .project {
+    height: auto;
+}
+#Projects main div:nth-child(2) .project a {
+    width: calc(var(--width) / 2);
+    display: block;
+}
+#Projects main div:nth-child(2) .project a div {
+    display: flex;
+    padding: calc(var(--height) * 0) calc(var(--width) * 0);
+    border-radius: calc(var(--width) / 100);
+    width: calc(var(--width) / 2);
+}
+#Projects main div:nth-child(2) .project a div div {
+    --project-container-width: calc(var(--width) / 4);
+    width: calc(var(--width) / 4);
+}
+#Projects main div:nth-child(2) .project a div div:nth-child(1) {
+    justify-content: center;
+    width: calc(var(--project-container-width) / 2);
+}
+#Projects main div:nth-child(2) .project a div div:nth-child(2) {
+    width: calc(var(--project-container-width) * (3 / 2));
+    display: block;
+}
+#Projects main div:nth-child(2) .project a div div:nth-child(1) img {
+    margin-top: calc(var(--height) / 100);
+    width: calc(var(--project-container-width) / 3);
+    height: fit-content;
+}
+#Projects main div:nth-child(2) .project a div div:nth-child(2) div,
+#Projects main div:nth-child(2) .project a div div:nth-child(2) p {
+    font-size: calc(var(--textSize) / 2);
+}
+#Projects main div:nth-child(2) .project a div div:nth-child(2) div {
+    display: block;
+    width: calc(var(--project-container-width) * (3 / 2));
+    height: calc(var(--height) / 30);
+}
+#Projects main div:nth-child(2) .project a div div:nth-child(2) p {
+    margin: calc(var(--height) / 50) calc(var(--width) * 0);
+    letter-spacing: calc(var(--width) / 1000);
+    height: calc(var(--height) / 7);
+}
+#Projects main div:nth-child(2) #archive {
+    height: calc(var(--height) / 25);
+}
+#Projects main div:nth-child(2) #archive a {
+    font-size: var(--textSize);
 }
