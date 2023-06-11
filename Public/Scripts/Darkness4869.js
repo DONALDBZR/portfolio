@@ -46,6 +46,16 @@ class Darkness4869 {
             "screen and (min-width: 640px) and (max-width: 1023px)",
             "screen and (max-width: 639px)",
         ];
+        /**
+         * The body of the page
+         * @type {HTMLBodyElement}
+         */
+        this.__body;
+        /**
+         * Class name of the body
+         * @type {string}
+         */
+        this.__bodyClassName;
         this.init();
     }
     /**
@@ -101,17 +111,63 @@ class Darkness4869 {
         this.__mimeType = mime_type;
     }
     /**
+     * @returns {HTMLBodyElement}
+     */
+    getBody() {
+        return this.__body;
+    }
+    /**
+     * @param {HTMLBodyElement} body
+     * @returns {void}
+     */
+    setBody(body) {
+        this.__body = body;
+    }
+    /**
+     * @returns {string}
+     */
+    getBodyClassName() {
+        return this.__bodyClassName;
+    }
+    /**
+     * @param {string} body_class_name
+     * @returns {void}
+     */
+    setBodyClassName(body_class_name) {
+        this.__bodyClassName = body_class_name;
+    }
+    /**
      * Initializing the application
      * @returns {void}
      */
     init() {
         this.setRequestURI(window.location.pathname);
+        this.setBody(document.body);
         if (this.getRequestURI() == "/") {
             this.setBodyId("Homepage");
         } else {
             this.setBodyId(this.getRequestURI().replaceAll("/", ""));
         }
-        document.body.id = this.getBodyId();
+        this.getBody().id = this.getBodyId();
+        this.render();
+    }
+    /**
+     * Importing and rendering the scripts
+     * @returns {void}
+     */
+    render() {
+        const script = document.createElement("script");
+        this.setBodyClassName(this.getBody().className);
+        this.setMimeType("text/babel");
+        if (this.getBodyClassName().includes("error")) {
+            if (this.getBodyClassName().includes("404")) {
+                script.src = "/Public/Scripts/HTTP404.js";
+            }
+        } else {
+            script.src = `/Public/Scripts/${this.getBodyId()}.js`;
+        }
+        script.type = this.getMimeType();
+        this.getBody().appendChild(script);
         this.style();
     }
     /**
