@@ -275,3 +275,27 @@ body {
     font-family: var(--promivaNova);
     text-align: center;
 }
+#About header nav div:nth-child(2) div a {
+    color: var(--color2);
+    text-decoration: none;
+    font-family: var(--sourceCodePro);
+}
+#About header nav div:nth-child(2) div a:hover,
+#About header nav div:nth-child(2) div a.active {
+    background-color: var(--color4);
+    color: var(--color2);
+}
+#About footer div a {
+    color: var(--color4);
+}
+#About footer div a:hover {
+    color: var(--color2);
+}
+#About main div div,
+#About main div p {
+    color: var(--color2);
+    font-family: var(--promivaNova);
+}
+#About main div:nth-child(1) div:nth-child(3) {
+    color: var(--color4);
+}

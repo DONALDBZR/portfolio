@@ -3,7 +3,7 @@
     --height: 0px;
     --width: 0px;
 }
-body {         
+body {
     height: var(--height);
     width: var(--width);
     margin: calc(var(--height) * 0) calc(var(--width) * 0);
@@ -107,4 +107,64 @@ body {
 .error404 header {
     height: calc(var(--height) / 17);
     font-size: calc(var(--textSize) * 2);
+}
+#About header,
+#About header nav,
+#About header nav div {
+    height: calc(var(--height) / 20);
+}
+#About header nav {
+    display: flex;
+}
+#About header nav div {
+    width: calc(var(--width) / 2);
+}
+#About header nav div:nth-child(2) {
+    display: flex;
+}
+#About header nav div:nth-child(2) div {
+    width: calc(var(--width) / 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About header nav div:nth-child(2) div a {
+    padding: calc(var(--height) / 100) calc(var(--width) / 100);
+}
+#About footer {
+    display: flex;
+    height: calc(var(--height) / 20);
+}
+#About footer div {
+    height: calc(var(--height) / 20);
+    width: calc(var(--width) / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About footer div a {
+    font-size: calc(var(--textSize) * 1.6);
+}
+#About main {
+    height: calc(var(--height) * 0.9);
+    display: flex;
+}
+#About main div {
+    width: calc(var(--width) / 2);
+}
+#About main div:nth-child(1) div {
+    padding-left: calc(var(--width) / 100);
+    width: calc(var(--width) * 0.49);
+    padding-top: calc(var(--height) / 25);
+}
+#About main div:nth-child(1) div:nth-child(1) {
+    font-size: calc(var(--textSize) * 2);
+}
+#About main div:nth-child(1) div:nth-child(2),
+#About main div:nth-child(1) div:nth-child(3) {
+    padding-top: calc(var(--height) / 100);
+}
+#About main div p {
+    margin: calc(var(--height) / 25) calc(var(--width) * 0);
+    letter-spacing: calc(var(--width) / 1000);
 }
