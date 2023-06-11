@@ -275,27 +275,60 @@ body {
     font-family: var(--promivaNova);
     text-align: center;
 }
-#About header nav div:nth-child(2) div a {
+#About header nav div:nth-child(2) div a,
+#Experience header nav div:nth-child(2) div a {
     color: var(--color2);
     text-decoration: none;
     font-family: var(--sourceCodePro);
 }
 #About header nav div:nth-child(2) div a:hover,
-#About header nav div:nth-child(2) div a.active {
+#About header nav div:nth-child(2) div a.active,
+#Experience header nav div:nth-child(2) div a:hover,
+#Experience header nav div:nth-child(2) div a.active {
     background-color: var(--color4);
     color: var(--color2);
 }
-#About footer div a {
+#About footer div a,
+#Experience footer div a {
     color: var(--color4);
 }
-#About footer div a:hover {
+#About footer div a:hover,
+#Experience footer div a:hover {
     color: var(--color2);
 }
 #About main div div,
-#About main div p {
+#About main div p,
+#Experience main div div {
     color: var(--color2);
     font-family: var(--promivaNova);
 }
-#About main div:nth-child(1) div:nth-child(3) {
+#About main div:nth-child(1) div:nth-child(3),
+#Experience main div:nth-child(1) div:nth-child(3),
+#Experience main div:nth-child(2) div div:nth-child(1),
+#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(2) p,
+#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(2) p a {
     color: var(--color4);
+}
+#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(1),
+#Experience main div:nth-child(2) div:nth-child(4) a {
+    color: var(--color2);
+}
+#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) div {
+    background-color: var(--color3);
+    color: var(--color4);
+}
+#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(2) p a,
+#Experience main div:nth-child(2) div:nth-child(4) a {
+    text-decoration: none;
+}
+#Experience
+    main
+    div:nth-child(2)
+    div
+    div:nth-child(2)
+    div:nth-child(2)
+    p
+    a:hover,
+#Experience main div:nth-child(2) div:nth-child(4) a:hover {
+    text-decoration: underline;
 }

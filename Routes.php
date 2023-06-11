@@ -8,4 +8,7 @@ switch ($Router->getRoute()) {
     case '/About':
         $Router->get($Router->getRoute(), "/Views/About.php");
         break;
+    case '/Experience':
+        $Router->get($Router->getRoute(), "/Views/Experience.php");
+        break;
 }
