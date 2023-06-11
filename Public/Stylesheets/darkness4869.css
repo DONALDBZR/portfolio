@@ -293,12 +293,14 @@ body {
 }
 #About footer div a,
 #Experience footer div a,
-#Projects footer div a {
+#Projects footer div a,
+#Archive footer div a {
     color: var(--color4);
 }
 #About footer div a:hover,
 #Experience footer div a:hover,
-#Projects footer div a:hover {
+#Projects footer div a:hover,
+#Archive footer div a:hover {
     color: var(--color2);
 }
 #About main div div,
@@ -314,19 +316,31 @@ body {
 #Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(2) p,
 #Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(2) p a,
 #Projects main div:nth-child(1) div:nth-child(3),
-#Projects main div:nth-child(2) .project a div div:nth-child(2) p {
+#Projects main div:nth-child(2) .project a div div:nth-child(2) p,
+#Archive header div:nth-child(1) a,
+#Archive main table tbody tr td:nth-child(5) a {
     color: var(--color4);
 }
 #Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(1),
-#Experience main div:nth-child(2) div:nth-child(4) a {
+#Experience main div:nth-child(2) div:nth-child(4) a,
+#Projects main div:nth-child(2) #archive a,
+#Archive header div:nth-child(2),
+#Archive header div:nth-child(1) a:hover,
+#Archive main table tbody tr td,
+#Archive main table thead tr th,
+#Archive main table tbody tr td:nth-child(5) a:hover {
     color: var(--color2);
 }
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) div {
+#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) div,
+#Archive main table tbody tr td:nth-child(4) div div {
     background-color: var(--color3);
     color: var(--color4);
 }
 #Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(2) p a,
-#Experience main div:nth-child(2) div:nth-child(4) a {
+#Experience main div:nth-child(2) div:nth-child(4) a,
+#Projects main div:nth-child(2) #archive a,
+#Archive main table tbody tr td:nth-child(5) a,
+#Projects main div:nth-child(2) .project a {
     text-decoration: none;
 }
 #Experience
@@ -340,19 +354,19 @@ body {
 #Experience main div:nth-child(2) div:nth-child(4) a:hover {
     text-decoration: underline;
 }
-#Projects main div:nth-child(2) .project a {
-    text-decoration: none;
-}
 #Projects main div:nth-child(2) .project a div div:nth-child(2) div {
     text-transform: capitalize;
 }
 #Projects main div:nth-child(2) .project a:hover div {
     background-color: var(--color3);
 }
-#Projects main div:nth-child(2) #archive a {
-    color: var(--color2);
-    text-decoration: none;
-}
 #Projects main div:nth-child(2) #archive a:hover {
     text-decoration: underline;
+}
+#Archive header div:nth-child(1) a {
+    text-decoration: none;
+    font-family: var(--sourceCodePro);
+}
+#Archive header div:nth-child(2) {
+    font-family: var(--promivaNova);
 }

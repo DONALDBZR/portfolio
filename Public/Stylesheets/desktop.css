@@ -149,13 +149,15 @@ body {
 }
 #About footer,
 #Experience footer,
-#Projects footer {
+#Projects footer,
+#Archive footer {
     display: flex;
     height: calc(var(--height) / 20);
 }
 #About footer div,
 #Experience footer div,
-#Projects footer div {
+#Projects footer div,
+#Archive footer div {
     height: calc(var(--height) / 20);
     width: calc(var(--width) / 4);
     display: flex;
@@ -164,7 +166,8 @@ body {
 }
 #About footer div a,
 #Experience footer div a,
-#Projects footer div a {
+#Projects footer div a,
+#Archive footer div a {
     font-size: calc(var(--textSize) * 1.6);
 }
 #About main,
@@ -211,7 +214,8 @@ body {
     scrollbar-width: none;
 }
 #Experience main div::-webkit-scrollbar,
-#Projects main div:nth-child(2)::-webkit-scrollbar {
+#Projects main div:nth-child(2)::-webkit-scrollbar,
+#Archive main table tbody::-webkit-scrollbar {
     display: none;
 }
 #Experience main div:nth-child(2) div {
@@ -338,4 +342,105 @@ body {
 }
 #Projects main div:nth-child(2) #archive a {
     font-size: var(--textSize);
+}
+#Archive header {
+    height: calc(var(--height) * (7 / 60));
+}
+#Archive header div:nth-child(1) {
+    height: calc(var(--height) / 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Archive header div:nth-child(2) {
+    font-size: calc(var(--textSize) * 1.1);
+    height: calc(var(--height) / 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Archive header div:nth-child(1) a {
+    font-size: calc(var(--textSize) * 2);
+}
+#Archive main,
+#Archive main table {
+    height: calc(var(--height) * (5 / 6));
+}
+#Archive main table {
+    display: block;
+}
+#Archive main table thead {
+    height: calc(var(--height) / 20);
+}
+#Archive main table thead tr {
+    height: calc(var(--height) / 20);
+}
+#Archive main table thead tr th {
+    width: calc(var(--width) / 6);
+    font-size: calc(var(--textSize) * 1.1);
+}
+#Archive main table thead tr th:nth-child(1) {
+    width: calc(var(--width) / 24);
+}
+#Archive main table thead tr th:nth-child(2) {
+    width: calc(var(--width) * (241 / 1056));
+}
+#Archive main table thead tr th:nth-child(3) {
+    width: calc(var(--width) * (241 / 1056));
+}
+#Archive main table thead tr th:nth-child(4) {
+    width: calc(var(--width) * (241 / 1056));
+}
+#Archive main table thead tr th:nth-child(5) {
+    width: calc(var(--width) * (241 / 1056));
+}
+#Archive main table thead tr th:nth-child(6) {
+    width: calc(var(--width) / 22);
+}
+#Archive main table tbody {
+    height: calc(var(--height) * (47 / 60));
+    display: block;
+    overflow: auto;
+    scrollbar-width: none;
+}
+#Archive main table tbody tr {
+    display: block;
+}
+#Archive main table tbody tr td {
+    width: calc(var(--width) / 6);
+}
+#Archive main table tbody tr td:nth-child(1) {
+    text-align: center;
+    width: calc(var(--width) / 24);
+}
+#Archive main table tbody tr td:nth-child(2) {
+    width: calc(var(--width) * (241 / 1056));
+}
+#Archive main table tbody tr td:nth-child(3) {
+    width: calc(var(--width) * (241 / 1056));
+    text-align: center;
+}
+#Archive main table tbody tr td:nth-child(4) {
+    width: calc(var(--width) * (241 / 1056));
+}
+#Archive main table tbody tr td:nth-child(5) {
+    width: calc(var(--width) * (241 / 1056));
+    text-align: center;
+}
+#Archive main table tbody tr td:nth-child(6) {
+    text-align: center;
+    width: calc(var(--width) / 22);
+}
+#Archive main table tbody tr td:nth-child(5) a {
+    font-size: var(--textSize);
+}
+#Archive main table tbody tr td:nth-child(4) div {
+    display: flex;
+    flex-wrap: wrap;
+}
+#Archive main table tbody tr td:nth-child(4) div div {
+    display: block;
+    margin: calc(var(--height) / 200) calc(var(--width) / 200);
+    padding: calc(var(--height) / 200) calc(var(--width) / 200);
+    border-radius: calc(var(--width) / 100);
 }
