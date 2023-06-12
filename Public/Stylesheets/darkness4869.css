@@ -243,7 +243,6 @@ body {
     font-family: var(--sourceCodePro);
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: calc(var(--width) / 1000);
     transition: calc(var(--time) / 2);
 }
 #Homepage header #button a:hover {

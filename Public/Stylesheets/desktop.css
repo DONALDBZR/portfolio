@@ -26,6 +26,7 @@ body {
     border-radius: calc(var(--height) / 50);
     text-shadow: 0 0 calc(var(--height) * 0.03) var(--color2);
     z-index: 1;
+    letter-spacing: calc(var(--width) / 1000);
 }
 #Homepage header #button a:hover {
     border: calc(var(--height) / 200) solid var(--color4);
