@@ -105,3 +105,74 @@ body {
 #Homepage header #button a:hover span:nth-child(4) {
     bottom: calc(var(--percentage) / 2);
 }
+#About header,
+#About header nav {
+    height: calc(var(--height) / 10);
+}
+#About header nav div {
+    width: var(--width);
+    display: flex;
+    height: calc(var(--height) / 10);
+}
+#About header nav div:nth-child(1) {
+    display: none;
+}
+#About header nav div div {
+    width: calc(var(--width) / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About header nav div div:nth-child(1) {
+    display: flex;
+}
+#About header nav div div a {
+    font-size: calc(var(--textSize) * 0.6561);
+    padding: calc(var(--height) / 50) calc(var(--width) / 50);
+}
+#About footer {
+    height: calc(var(--height) / 10);
+    display: flex;
+}
+#About main {
+    --main-height: calc(var(--height) * 0.8);
+    height: calc(var(--height) * 0.8);
+}
+#About footer div {
+    width: calc(var(--width) / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About footer div a {
+    font-size: calc(var(--textSize) * 1);
+}
+#About main div:nth-child(1) {
+    height: calc(var(--main-height) / 5);
+}
+#About main div:nth-child(1) div {
+    font-size: calc(var(--textSize) * 0.531441);
+    margin: calc(var(--height) / 100) calc(var(--width) * 0);
+    padding-left: calc(var(--width) / 100);
+}
+#About main div:nth-child(1) div:nth-child(1) {
+    font-size: calc(var(--textSize) * 1);
+    height: auto;
+}
+#About main div:nth-child(1) div:nth-child(2) {
+    height: auto;
+}
+#About main div:nth-child(2) {
+    height: calc(var(--main-height) * 0.8);
+    overflow: auto;
+    scrollbar-width: none;
+}
+#About main div:nth-child(2)::-webkit-scrollbar {
+    display: none;
+}
+#About main div:nth-child(2) p {
+    margin: calc(var(--height) / 50) calc(var(--width) * 0);
+    padding-left: calc(var(--width) / 100);
+    font-size: calc(var(--textSize) * 0.531441);
+    letter-spacing: calc(var(--width) / 1000);
+}
