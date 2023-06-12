@@ -106,68 +106,85 @@ body {
     bottom: calc(var(--percentage) / 2);
 }
 #About header,
-#About header nav {
+#About header nav,
+#Experience header,
+#Experience header nav {
     height: calc(var(--height) / 10);
 }
-#About header nav div {
+#About header nav div,
+#Experience header nav div {
     width: var(--width);
     display: flex;
     height: calc(var(--height) / 10);
 }
-#About header nav div:nth-child(1) {
+#About header nav div:nth-child(1),
+#Experience header nav div:nth-child(1) {
     display: none;
 }
-#About header nav div div {
+#About header nav div div,
+#Experience header nav div div {
     width: calc(var(--width) / 3);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#About header nav div div:nth-child(1) {
+#About header nav div div:nth-child(1),
+#Experience header nav div div:nth-child(1) {
     display: flex;
 }
-#About header nav div div a {
+#About header nav div div a,
+#Experience header nav div div a {
     font-size: calc(var(--textSize) * 0.6561);
     padding: calc(var(--height) / 50) calc(var(--width) / 50);
 }
-#About footer {
+#About footer,
+#Experience footer {
     height: calc(var(--height) / 10);
     display: flex;
 }
-#About main {
+#About main,
+#Experience main {
     --main-height: calc(var(--height) * 0.8);
     height: calc(var(--height) * 0.8);
 }
-#About footer div {
+#About footer div,
+#Experience footer div {
     width: calc(var(--width) / 4);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#About footer div a {
+#About footer div a,
+#Experience footer div a {
     font-size: calc(var(--textSize) * 1);
 }
-#About main div:nth-child(1) {
+#About main div:nth-child(1),
+#Experience main div:nth-child(1) {
     height: calc(var(--main-height) / 5);
 }
-#About main div:nth-child(1) div {
+#About main div:nth-child(1) div,
+#Experience main div:nth-child(1) div {
     font-size: calc(var(--textSize) * 0.531441);
     margin: calc(var(--height) / 100) calc(var(--width) * 0);
     padding-left: calc(var(--width) / 100);
 }
-#About main div:nth-child(1) div:nth-child(1) {
+#About main div:nth-child(1) div:nth-child(1),
+#Experience main div:nth-child(1) div:nth-child(1) {
     font-size: calc(var(--textSize) * 1);
     height: auto;
 }
-#About main div:nth-child(1) div:nth-child(2) {
+#About main div:nth-child(1) div:nth-child(2),
+#Experience main div:nth-child(1) div:nth-child(2) {
     height: auto;
 }
-#About main div:nth-child(2) {
+#About main div:nth-child(2),
+#Experience main div:nth-child(2) {
     height: calc(var(--main-height) * 0.8);
     overflow: auto;
     scrollbar-width: none;
 }
-#About main div:nth-child(2)::-webkit-scrollbar {
+#About main div:nth-child(2)::-webkit-scrollbar,
+#Experience main div:nth-child(2)::-webkit-scrollbar {
     display: none;
 }
 #About main div:nth-child(2) p {
@@ -175,4 +192,51 @@ body {
     padding-left: calc(var(--width) / 100);
     font-size: calc(var(--textSize) * 0.531441);
     letter-spacing: calc(var(--width) / 1000);
+}
+#Experience main div:nth-child(2) div {
+    display: flex;
+    height: auto;
+}
+#Experience main div:nth-child(2) div div {
+    width: calc(var(--width) / 2);
+    font-size: calc(var(--textSize) * 0.531441);
+}
+#Experience main div:nth-child(2) div div:nth-child(1) {
+    font-size: calc(var(--textSize) * 0.43046721);
+    width: calc(var(--width) * 0.4);
+}
+#Experience main div:nth-child(2) div div:nth-child(2) {
+    display: block;
+    padding: calc(var(--height) * 0) calc(var(--width) * 0);
+    overflow: unset;
+    width: calc(var(--width) * 0.6);
+}
+#Experience main div:nth-child(2) div div:nth-child(2) div {
+    margin: calc(var(--height) * 0) calc(var(--width) * 0);
+    padding: calc(var(--height) * 0) calc(var(--width) * 0);
+}
+#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(1) {
+    width: calc(var(--width) * 0.6);
+    font-size: calc(var(--textSize) * 0.531441);
+}
+#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(2) p {
+    margin: calc(var(--height) / 100) calc(var(--width) * 0);
+}
+#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) {
+    width: calc(var(--width) * 0.6);
+    flex-wrap: wrap;
+}
+#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) div {
+    display: block;
+    width: auto;
+    margin: calc(var(--height) / 100) calc(var(--width) / 100);
+    padding: calc(var(--height) / 100) calc(var(--width) / 100);
+    border-radius: calc(var(--height) / 50);
+    font-size: calc(var(--textSize) * 0.6561);
+}
+#Experience main div:nth-child(2) div:nth-child(4) {
+    align-items: center;
+}
+#Experience main div:nth-child(2) div:nth-child(4) a {
+    font-size: calc(var(--textSize) * 0.531441);
 }
