@@ -8,7 +8,7 @@ class Application extends React.Component {
             projects: [
                 {
                     year: 2023,
-                    name: "Parkinston: Online Game Analyzer",
+                    name: "Parkinston",
                     from: "",
                     technologiesUsed: [
                         "HTML",
@@ -23,7 +23,7 @@ class Application extends React.Component {
                 },
                 {
                     year: 2023,
-                    name: "Stationery: Inventory Management System",
+                    name: "Stationery",
                     from: "SEDECO",
                     technologiesUsed: [
                         "HTML",
@@ -60,7 +60,7 @@ class Application extends React.Component {
                 },
                 {
                     year: 2022,
-                    name: "Supreme Court of Mauritius Portal",
+                    name: "Supreme Court Portal",
                     from: "Agileum",
                     technologiesUsed: [
                         "HTML",
@@ -76,7 +76,7 @@ class Application extends React.Component {
                 },
                 {
                     year: 2022,
-                    name: "E-Filing: MRA E-Services",
+                    name: "E-Filing",
                     from: "Agileum",
                     technologiesUsed: [
                         "HTML",
@@ -100,7 +100,7 @@ class Application extends React.Component {
                 },
                 {
                     year: 2021,
-                    name: "Educatio: Université Des Mascareignes Library Management System",
+                    name: "Educatio",
                     from: "Université Des Mascareignes",
                     technologiesUsed: [
                         "HTML",
