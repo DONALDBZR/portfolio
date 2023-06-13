@@ -101,7 +101,7 @@ class Application extends React.Component {
                 {
                     year: 2021,
                     name: "Educatio: Université Des Mascareignes Library Management System",
-                    from: "Univeristé Des Mascareignes",
+                    from: "Université Des Mascareignes",
                     technologiesUsed: [
                         "HTML",
                         "CSS",
