@@ -1,0 +1,162 @@
+:root {
+    --textSize: calc(var(--percentage) * 1.1);
+    --height: 0px;
+    --width: 0px;
+}
+body {
+    height: var(--height);
+    width: var(--width);
+    margin: calc(var(--height) * 0) calc(var(--width) * 0);
+    font-size: var(--textSize);
+}
+#Homepage header #button {
+    height: var(--height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Homepage header #button a {
+    letter-spacing: calc(var(--width) / 1000);
+    position: relative;
+    padding: calc(var(--height) * 0.02) calc(var(--width) * 0.02);
+    font-size: calc(var(--textSize) * 1.1);
+    border: calc(var(--height) / 200) solid var(--color3);
+    border-radius: calc(var(--height) / 50);
+    text-shadow: 0 0 calc(var(--height) * 0.03) var(--color2);
+    z-index: 1;
+}
+#Homepage header #button a:hover {
+    border: calc(var(--height) / 200) solid var(--color4);
+    box-shadow: 0 0 calc(var(--height) * 0) var(--color2);
+}
+#Homepage header #button a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--percentage);
+    height: var(--percentage);
+    z-index: -1;
+    border-radius: calc(var(--height) / 50);
+}
+#Homepage header #button a:hover::before {
+    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2),
+        0 0 calc(var(--height) * 0.06) var(--color2),
+        0 0 calc(var(--height) * 0.12) var(--color2);
+}
+#Homepage header #button a span {
+    position: absolute;
+    border-radius: calc(var(--height) / 200);
+    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2),
+        0 0 calc(var(--height) * 0.04) var(--color2),
+        0 0 calc(var(--height) * 0.06) var(--color2),
+        0 0 calc(var(--height) * 0.1) var(--color2),
+        0 0 calc(var(--height) * 0.2) var(--color2);
+}
+#Homepage header #button a span:nth-child(1),
+#Homepage header #button a span:nth-child(3) {
+    width: calc(var(--width) / 16);
+    height: calc(var(--height) / 100);
+}
+#Homepage header #button a:hover span:nth-child(1),
+#Homepage header #button a:hover span:nth-child(3) {
+    transform: translateX(0);
+}
+#Homepage header #button a span:nth-child(2),
+#Homepage header #button a span:nth-child(4) {
+    width: calc(var(--width) / 80);
+    height: calc(var(--height) / 20);
+}
+#Homepage header #button a:hover span:nth-child(2),
+#Homepage header #button a:hover span:nth-child(4) {
+    transform: translateY(0);
+}
+#Homepage header #button a span:nth-child(1) {
+    top: calc((var(--percentage) / 2) - (var(--height) / 200));
+    left: calc(var(--width) / -10);
+    transform-origin: left;
+}
+#Homepage header #button a:hover span:nth-child(1) {
+    left: calc(var(--percentage) / 2);
+}
+#Homepage header #button a span:nth-child(3) {
+    top: calc((var(--percentage) / 2) - (var(--height) / 200));
+    right: calc(var(--width) / -10);
+    transform-origin: right;
+}
+#Homepage header #button a:hover span:nth-child(3) {
+    right: calc(var(--percentage) / 2);
+}
+#Homepage header #button a span:nth-child(2) {
+    left: calc((var(--percentage) / 2) - (var(--width) / 500));
+    top: calc(var(--height) / -10);
+    transform-origin: top;
+}
+#Homepage header #button a:hover span:nth-child(2) {
+    top: calc(var(--percentage) / 2);
+}
+#Homepage header #button a span:nth-child(4) {
+    left: calc((var(--percentage) / 2) - (var(--width) / 500));
+    bottom: calc(var(--height) / -10);
+    transform-origin: bottom;
+}
+#Homepage header #button a:hover span:nth-child(4) {
+    bottom: calc(var(--percentage) / 2);
+}
+#About header {
+    height: calc(var(--height) / 20);
+}
+#About header nav {
+    height: inherit;
+    display: flex;
+}
+#About header nav div {
+    --container-width: calc(var(--width) / 2);
+    width: calc(var(--width) / 2);
+}
+#About header nav div:nth-child(2) {
+    display: flex;
+}
+#About header nav div:nth-child(2) div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--container-width) / 3);
+}
+#About header nav div:nth-child(2) div a {
+    padding: calc(var(--height) / 100) calc(var(--width) / 100);
+}
+#About footer {
+    height: calc(var(--height) / 20);
+    display: flex;
+}
+#About footer div {
+    width: calc(var(--width) / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About footer div a {
+    font-size: calc(var(--textSize) * 1.4641);
+}
+#About main {
+    --container-height: calc(var(--height) * 0.9);
+    height: calc(var(--height) * 0.9);
+}
+#About main div:nth-child(1) {
+    --description-height: calc(var(--container-height) / 10);
+    height: calc(var(--container-height) / 10);
+}
+#About main div:nth-child(2) {
+    height: calc(var(--container-height) * 0.9);
+}
+#About main div:nth-child(1) div {
+    height: calc(var(--description-height) / 3);
+    font-size: var(--textSize);
+    padding-left: calc(var(--width) / 100);
+}
+#About main div:nth-child(2) p {
+    margin: calc(var(--height) * 0) calc(var(--width) * 0);
+    padding: calc(var(--height) / 100) calc(var(--width) * 0);
+    letter-spacing: calc(var(--width) / 500);
+    padding-left: calc(var(--width) / 100);
+}
