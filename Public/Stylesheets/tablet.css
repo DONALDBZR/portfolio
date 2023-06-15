@@ -199,7 +199,8 @@ body {
     overflow: auto;
     scrollbar-width: none;
 }
-#Experience main div:nth-child(2)::-webkit-scrollbar {
+#Experience main div:nth-child(2)::-webkit-scrollbar,
+#Archive main table tbody::-webkit-scrollbar {
     display: none;
 }
 #Experience main div:nth-child(2) div div:nth-child(1) {
@@ -274,4 +275,93 @@ body {
     margin: calc(var(--height) / 100) calc(var(--width) * 0);
     font-size: calc(var(--textSize) * 0.729);
     letter-spacing: calc(var(--width) / 1000);
+}
+#Archive header {
+    --header-height: calc(var(--height) / 10);
+    height: calc(var(--height) / 10);
+}
+#Archive header div {
+    height: calc(var(--header-height) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Archive header div:nth-child(1) a {
+    font-size: var(--textSize);
+}
+#Archive header div:nth-child(2) {
+    font-size: calc(var(--textSize) * 0.9);
+}
+#Archive main {
+    height: calc(var(--height) * 0.8);
+}
+#Archive footer {
+    height: calc(var(--height) / 10);
+    display: flex;
+}
+#Archive footer div {
+    width: calc(var(--width) / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Archive footer div a {
+    font-size: calc(var(--textSize) * 3.138428377);
+}
+#Archive main table {
+    display: block;
+    height: calc(var(--height) * 0.8);
+}
+#Archive main table thead {
+    display: none;
+}
+#Archive main table tbody {
+    display: block;
+    height: calc(var(--height) * 0.8);
+    overflow: auto;
+    scrollbar-width: none;
+}
+#Archive main table tbody tr {
+    display: block;
+    height: auto;
+    margin: calc(var(--height) / 100) calc(var(--width) * 0);
+}
+#Archive main table tbody tr td {
+    display: flex;
+    margin: calc(var(--height) / 200) calc(var(--width) * 0);
+}
+#Archive main table tbody tr td::before {
+    display: block;
+    width: calc(var(--width) / 7);
+}
+#Archive main table tbody tr td:nth-child(1)::before {
+    content: "Year: ";
+}
+#Archive main table tbody tr td:nth-child(2)::before {
+    content: "Name: ";
+}
+#Archive main table tbody tr td:nth-child(3)::before {
+    content: "Made At: ";
+}
+#Archive main table tbody tr td:nth-child(4)::before {
+    content: "Built With: ";
+    margin-top: calc(var(--height) / 50);
+}
+#Archive main table tbody tr td:nth-child(5)::before {
+    content: "Link: ";
+}
+#Archive main table tbody tr td:nth-child(6)::before {
+    content: "Status: ";
+}
+#Archive main table tbody tr td:nth-child(4) div {
+    display: flex;
+    flex-wrap: wrap;
+}
+#Archive main table tbody tr td:nth-child(4) div div {
+    margin: calc(var(--height) / 100) calc(var(--width) / 100);
+    padding: calc(var(--height) / 100) calc(var(--width) / 100);
+    border-radius: calc(var(--height) / 25);
+}
+#Archive main table tbody tr td:nth-child(4) div div:nth-child(1) {
+    margin-left: calc(var(--width) * 0);
 }
