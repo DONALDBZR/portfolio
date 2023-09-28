@@ -45,7 +45,28 @@ class Main extends Application {
                     <div>Full-Stack Web Developer</div>
                     <div>I build applications and web-based applications.</div>
                 </div>
-                <div>
+                <div id="experienceBar">
+                    <div>
+                        <div>Jul - Present</div>
+                        <div>
+                            <div>Junior Software Developer - FinClub</div>
+                            <div>
+                                <p>
+                                    Maintain and improve applications that are
+                                    used internally by the company.
+                                </p>
+                            </div>
+                            <div>
+                                <div>JavaScript</div>
+                                <div>PHP</div>
+                                <div>Python</div>
+                                <div>MySQL</div>
+                                <div>Linux</div>
+                                <div>ExpressJS</div>
+                                <div>Selenium</div>
+                            </div>
+                        </div>
+                    </div>
                     <div>
                         <div>2020 - Present</div>
                         <div>
