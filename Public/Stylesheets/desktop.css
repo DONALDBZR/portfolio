@@ -291,7 +291,7 @@ body {
     div {
     padding: calc(var(--height) / 60) calc(var(--skill-used-width) / 60);
 }
-#Experience main div:nth-child(2) div:nth-child(4) {
+#Experience main div:nth-child(2) div:nth-child(5) {
     display: block;
 }
 #Projects main div:nth-child(2) .project {
