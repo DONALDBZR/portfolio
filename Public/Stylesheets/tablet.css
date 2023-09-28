@@ -177,7 +177,7 @@ body {
 #Experience main div:nth-child(1) div,
 #Projects main div:nth-child(1) div {
     height: calc(var(--description-height) / 3);
-    font-size: var(--textSize);
+    font-size: calc(var(--textSize) * 0.729);
     padding-left: calc(var(--width) / 100);
 }
 #About main div:nth-child(2) p {
