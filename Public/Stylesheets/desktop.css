@@ -195,6 +195,9 @@ body {
 #Projects main div:nth-child(1) div:nth-child(1) {
     font-size: calc(var(--textSize) * 2);
 }
+#Projects main div:nth-child(1) div:nth-child(1) {
+    font-size: calc(var(--textSize) * 1);
+}
 #About main div:nth-child(1) div:nth-child(2),
 #About main div:nth-child(1) div:nth-child(3),
 #Experience main div:nth-child(1) div:nth-child(2),
@@ -324,14 +327,11 @@ body {
     width: calc(var(--project-container-width) / 3);
     height: fit-content;
 }
-#Projects main div:nth-child(2) .project a div div:nth-child(2) div,
-#Projects main div:nth-child(2) .project a div div:nth-child(2) p {
-    font-size: calc(var(--textSize) / 2);
-}
 #Projects main div:nth-child(2) .project a div div:nth-child(2) div {
     display: block;
     width: calc(var(--project-container-width) * (3 / 2));
     height: calc(var(--height) / 30);
+    padding-left: calc(var(--project-container-width) / 120);
 }
 #Projects main div:nth-child(2) .project a div div:nth-child(2) p {
     margin: calc(var(--height) / 50) calc(var(--width) * 0);
