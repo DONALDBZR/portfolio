@@ -167,7 +167,8 @@ body {
     display: flex;
     justify-content: center;
 }
-#About footer div a #Experience footer div a {
+#About footer div a,
+#Experience footer div a {
     font-size: calc(var(--textSize) * 1.866666667);
 }
 #About main div,
