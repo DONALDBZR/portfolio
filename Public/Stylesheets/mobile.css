@@ -103,272 +103,85 @@ body {
     bottom: calc(var(--percentage) / 2);
 }
 #About header,
-#About header nav,
-#Experience header,
-#Experience header nav,
-#Projects header,
-#Projects header nav {
+#About footer {
     height: calc(var(--height) / 10);
 }
-#About header nav div,
-#Experience header nav div,
-#Projects header nav div {
-    width: var(--width);
+#About main {
+    --main-height: calc(var(--height) * 0.8);
+    --main-width: var(--width);
+    height: var(--main-height);
+}
+#About footer {
     display: flex;
-    height: calc(var(--height) / 10);
+    align-items: center;
 }
-#About header nav div:nth-child(1),
-#Experience header nav div:nth-child(1),
-#Projects header nav div:nth-child(1) {
+#About header nav {
+    display: flex;
+    height: inherit;
+}
+#About header nav div:nth-child(1) {
     display: none;
 }
-#About header nav div div,
-#Experience header nav div div,
-#Projects header nav div div {
+#About header nav div:nth-child(2) {
+    display: flex;
+    height: inherit;
+}
+#About header nav div:nth-child(2) div {
+    display: flex;
     width: calc(var(--width) / 3);
+    align-items: center;
+    height: inherit;
+    justify-content: center;
+}
+#About header nav div:nth-child(2) div a {
+    width: calc(var(--width) / 3.3);
+    height: calc(var(--height) / 20);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: calc(var(--height) / 40);
+    font-size: calc(var(--textSize) * (20 / 28.345));
 }
-#About header nav div div:nth-child(1),
-#Experience header nav div div:nth-child(1),
-#Projects header nav div div:nth-child(1) {
-    display: flex;
-}
-#About header nav div div a,
-#Experience header nav div div a,
-#Projects header nav div div a {
-    font-size: calc(var(--textSize) * 0.6561);
-    padding: calc(var(--height) / 50) calc(var(--width) / 50);
-}
-#About footer,
-#Experience footer,
-#Projects footer,
-#Archive footer {
-    height: calc(var(--height) / 10);
-    display: flex;
-}
-#About main,
-#Experience main,
-#Projects main,
-#Archive main {
-    --main-height: calc(var(--height) * 0.8);
-    height: calc(var(--height) * 0.8);
-}
-#About footer div,
-#Experience footer div,
-#Projects footer div,
-#Archive footer div {
+#About footer div {
     width: calc(var(--width) / 4);
     display: flex;
     justify-content: center;
+    height: calc(var(--height) / 15);
+}
+#About footer div a {
+    font-size: calc(var(--textSize) * 1.518518519);
+}
+#About main div:nth-child(1) {
+    height: calc(var(--main-height) / 4);
+}
+#About main div:nth-child(2) {
+    height: calc(var(--main-height) * 0.75);
+    overflow: auto;
+}
+#About main div:nth-child(1) div {
+    display: flex;
     align-items: center;
+    width: calc(var(--main-width) * 0.99);
+    margin-left: calc(var(--main-width) / 100);
+    font-size: calc(var(--textSize) * (20 / 28.345));
 }
-#About footer div a,
-#Experience footer div a,
-#Projects footer div a,
-#Archive footer div a {
-    font-size: calc(var(--textSize) * 1);
-}
-#About main div:nth-child(1),
-#Experience main div:nth-child(1),
-#Projects main div:nth-child(1) {
-    height: calc(var(--main-height) / 5);
-}
-#About main div:nth-child(1) div,
-#Experience main div:nth-child(1) div,
-#Projects main div:nth-child(1) div {
-    font-size: calc(var(--textSize) * 0.531441);
-    margin: calc(var(--height) / 100) calc(var(--width) * 0);
-    padding-left: calc(var(--width) / 100);
-}
-#About main div:nth-child(1) div:nth-child(1),
-#Experience main div:nth-child(1) div:nth-child(1),
-#Projects main div:nth-child(1) div:nth-child(1) {
-    font-size: calc(var(--textSize) * 1);
-    height: auto;
+#About main div:nth-child(1) div:nth-child(1) {
+    font-size: calc(var(--textSize) * (20 / 28.345) * 1.9487171);
+    height: calc(var(--main-height) / 10);
 }
 #About main div:nth-child(1) div:nth-child(2),
-#Experience main div:nth-child(1) div:nth-child(2),
-#Projects main div:nth-child(1) div:nth-child(2) {
-    height: auto;
+#About main div:nth-child(1) div:nth-child(3) {
+    height: calc(var(--main-height) / 20);
+    letter-spacing: calc(var(--main-width) / 500);
 }
-#About main div:nth-child(2),
-#Experience main div:nth-child(2),
-#Projects main div:nth-child(2) {
-    height: calc(var(--main-height) * 0.8);
-    overflow: auto;
-    scrollbar-width: none;
-}
-#About main div:nth-child(2)::-webkit-scrollbar,
-#Experience main div:nth-child(2)::-webkit-scrollbar,
-#Archive main table tbody::-webkit-scrollbar {
-    display: none;
+#About main div:nth-child(1) div:nth-child(3) {
+    height: calc(var(--main-height) / 10);
 }
 #About main div:nth-child(2) p {
-    margin: calc(var(--height) / 50) calc(var(--width) * 0);
-    padding-left: calc(var(--width) / 100);
-    font-size: calc(var(--textSize) * 0.531441);
-    letter-spacing: calc(var(--width) / 1000);
+    font-size: calc(var(--textSize) * (20 / 28.345));
+    letter-spacing: calc(var(--main-width) / 1000);
+    margin: calc(var(--main-height) * 0.015) calc(var(--main-width) * 0);
 }
-#Experience main div:nth-child(2) div {
-    display: flex;
-    height: auto;
-}
-#Experience main div:nth-child(2) div div {
-    width: calc(var(--width) / 2);
-    font-size: calc(var(--textSize) * 0.531441);
-}
-#Experience main div:nth-child(2) div div:nth-child(1) {
-    font-size: calc(var(--textSize) * 0.43046721);
-    width: calc(var(--width) * 0.4);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) {
-    display: block;
-    padding: calc(var(--height) * 0) calc(var(--width) * 0);
-    overflow: unset;
-    width: calc(var(--width) * 0.6);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div {
-    margin: calc(var(--height) * 0) calc(var(--width) * 0);
-    padding: calc(var(--height) * 0) calc(var(--width) * 0);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(1) {
-    width: calc(var(--width) * 0.6);
-    font-size: calc(var(--textSize) * 0.531441);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(2) p {
-    margin: calc(var(--height) / 100) calc(var(--width) * 0);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) {
-    width: calc(var(--width) * 0.6);
-    flex-wrap: wrap;
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) div {
-    display: block;
-    width: auto;
-    margin: calc(var(--height) / 100) calc(var(--width) / 100);
-    padding: calc(var(--height) / 100) calc(var(--width) / 100);
-    border-radius: calc(var(--height) / 50);
-    font-size: calc(var(--textSize) * 0.6561);
-}
-#Experience main div:nth-child(2) div:nth-child(4) {
-    align-items: center;
-}
-#Experience main div:nth-child(2) div:nth-child(4) a {
-    font-size: calc(var(--textSize) * 0.531441);
-}
-#Projects main div:nth-child(2) .project {
-    height: auto;
-}
-#Projects main div:nth-child(2) .project a {
-    width: var(--width);
-    display: block;
-    height: auto;
-}
-#Projects main div:nth-child(2) .project a div {
-    height: auto;
-    width: auto;
-    display: flex;
-    margin: calc(var(--height) * 0) calc(var(--width) * 0);
-    padding: calc(var(--height) * 0) calc(var(--width) * 0);
-}
-#Projects main div:nth-child(2) .project a div div {
-    width: calc(var(--width) / 2);
-    display: block;
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(1) {
-    --container-width: calc(var(--width) / 2);
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(1) img {
-    margin: calc(var(--height) * 0) calc(var(--container-width) / 10);
-    width: calc(var(--container-width) * 0.8);
-    height: auto;
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(2) div {
-    font-size: calc(var(--textSize) * 0.59049);
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(2) p {
-    margin: calc(var(--height) / 100) calc(var(--width) * 0);
-    font-size: calc(var(--textSize) * 0.531441);
-    letter-spacing: calc(var(--width) / 500);
-}
-#Projects main div:nth-child(2) #archive {
-    font-size: calc(var(--textSize) * 0.6561);
-    height: calc(var(--height) * 0.05);
-    overflow: unset;
-    display: flex;
-    align-items: center;
-}
-#Archive header {
-    --header-height: calc(var(--height) / 10);
-    height: calc(var(--height) / 10);
-}
-#Archive header div {
-    height: calc(var(--header-height) / 2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#Archive header div:nth-child(2) {
-    font-size: calc(var(--textSize) * 0.531441);
-}
-#Archive header div:nth-child(1) a {
-    font-size: calc(var(--textSize) * 0.6561);
-}
-#Archive main table {
-    display: block;
-}
-#Archive main table thead {
-    display: none;
-}
-#Archive main table tbody {
-    height: calc(var(--main-height) * 1);
-    display: block;
-    overflow: auto;
-    scrollbar-width: none;
-}
-#Archive main table tbody tr {
-    display: block;
-    margin: calc(var(--height) / 50) calc(var(--width) * 0);
-}
-#Archive main table tbody tr td {
-    display: flex;
-    font-size: calc(var(--textSize) * 0.531441);
-    margin: calc(var(--height) / 100) calc(var(--width) * 0);
-}
-#Archive main table tbody tr td::before {
-    width: calc(var(--width) / 4);
-}
-#Archive main table tbody tr td:nth-child(1)::before {
-    content: "Year: ";
-}
-#Archive main table tbody tr td:nth-child(2)::before {
-    content: "Name: ";
-}
-#Archive main table tbody tr td:nth-child(3)::before {
-    content: "Made At: ";
-}
-#Archive main table tbody tr td:nth-child(4)::before {
-    content: "Built With: ";
-    margin-top: calc(var(--height) / 50);
-    width: calc(var(--width) * 0.24);
-}
-#Archive main table tbody tr td:nth-child(5)::before {
-    content: "Link: ";
-}
-#Archive main table tbody tr td:nth-child(6)::before {
-    content: "Status: ";
-}
-#Archive main table tbody tr td:nth-child(4) div {
-    display: flex;
-    width: calc(var(--width) * (3 / 4));
-    flex-wrap: wrap;
-}
-#Archive main table tbody tr td:nth-child(4) div div {
-    display: block;
-    width: auto;
-    margin: calc(var(--height) / 100) calc(var(--width) / 100);
-    padding: calc(var(--height) / 100) calc(var(--width) / 100);
-    border-radius: calc(var(--height) / 25);
+#About main div:nth-child(2) p:nth-child(1) {
+    margin-top: calc(var(--main-height) * 0);
 }
