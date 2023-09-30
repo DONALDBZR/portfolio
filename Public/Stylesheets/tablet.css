@@ -103,265 +103,89 @@ body {
     bottom: calc(var(--percentage) / 2);
 }
 #About header,
-#Experience header,
-#Projects header {
-    height: calc(var(--height) / 20);
-}
-#About header nav,
-#Experience header nav,
-#Projects header nav {
-    height: inherit;
-    display: flex;
-}
-#About header nav div,
-#Experience header nav div,
-#Projects header nav div {
-    --container-width: calc(var(--width) / 2);
-    width: calc(var(--width) / 2);
-}
-#About header nav div:nth-child(2),
-#Experience header nav div:nth-child(2),
-#Projects header nav div:nth-child(2) {
-    display: flex;
-}
-#About header nav div:nth-child(2) div,
-#Experience header nav div:nth-child(2) div,
-#Projects header nav div:nth-child(2) div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(var(--container-width) / 3);
-}
-#About header nav div:nth-child(2) div a,
-#Experience header nav div:nth-child(2) div a,
-#Projects header nav div:nth-child(2) div a {
-    padding: calc(var(--height) / 100) calc(var(--width) / 100);
-}
-#About footer,
-#Experience footer,
-#Projects footer {
-    height: calc(var(--height) / 20);
-    display: flex;
-}
-#About footer div,
-#Experience footer div,
-#Projects footer div {
-    width: calc(var(--width) / 4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#About footer div a,
-#Experience footer div a,
-#Projects footer div a {
-    font-size: calc(var(--textSize) * 1.4641);
-}
-#About main,
-#Experience main,
-#Projects main {
-    --container-height: calc(var(--height) * 0.9);
-    height: calc(var(--height) * 0.9);
-}
-#About main div:nth-child(1),
-#Experience main div:nth-child(1),
-#Projects main div:nth-child(1) {
-    --description-height: calc(var(--container-height) / 10);
-    height: calc(var(--container-height) / 10);
-}
-#About main div:nth-child(2),
-#Experience main div:nth-child(2),
-#Projects main div:nth-child(2) {
-    height: calc(var(--container-height) * 0.9);
-}
-#About main div:nth-child(1) div,
-#Experience main div:nth-child(1) div,
-#Projects main div:nth-child(1) div {
-    height: calc(var(--description-height) / 3);
-    font-size: calc(var(--textSize) * 0.729);
-    padding-left: calc(var(--width) / 100);
-}
-#About main div:nth-child(2) p {
-    margin: calc(var(--height) * 0) calc(var(--width) * 0);
-    padding: calc(var(--height) / 100) calc(var(--width) * 0);
-    letter-spacing: calc(var(--width) / 500);
-    padding-left: calc(var(--width) / 100);
-}
-#Experience main div:nth-child(2) div {
-    margin: calc(var(--height) / 100) calc(var(--width) * 0);
-    height: auto;
-    display: flex;
-}
-#Experience main div:nth-child(2) div div {
-    width: calc(var(--width) / 2);
-    display: block;
-}
-#Experience main div:nth-child(2) {
-    overflow: auto;
-    scrollbar-width: none;
-}
-#Experience main div:nth-child(2)::-webkit-scrollbar,
-#Archive main table tbody::-webkit-scrollbar {
-    display: none;
-}
-#Experience main div:nth-child(2) div div:nth-child(1) {
-    padding-left: calc(var(--width) / 100);
-    font-size: calc(var(--textSize) * 1);
-    width: calc(var(--width) / 3);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) {
-    padding-left: calc(var(--width) * 0);
-    width: calc(var(--width) * (2 / 3));
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div {
-    padding-left: calc(var(--width) * 0);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(1) {
-    font-size: var(--textSize);
-    margin: calc(var(--height) * 0) calc(var(--width) * 0);
-    width: calc(var(--width) * (2 / 3));
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(2) p {
-    margin: calc(var(--height) * 0) calc(var(--width) * 0);
-    letter-spacing: calc(var(--width) / 1000);
-    font-size: calc(var(--textSize) * 0.81);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(var(--width) * (2 / 3));
-    font-size: calc(var(--textSize) * 0.9);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) div {
-    display: block;
-    width: auto;
-    margin: calc(var(--height) / 100) calc(var(--width) / 100);
-    padding: calc(var(--height) / 100) calc(var(--width) / 100);
-    border-radius: calc(var(--height) / 25);
-}
-#Projects main div:nth-child(2) .project {
-    height: auto;
-}
-#Projects main div:nth-child(2) .project a {
-    display: block;
-    height: auto;
-}
-#Projects main div:nth-child(2) .project a div {
-    padding-left: calc(var(--width) * 0);
-    display: flex;
-    height: auto;
-}
-#Projects main div:nth-child(2) .project a div div {
-    --container-width: calc(var(--width) / 2);
-    width: calc(var(--width) / 2);
-    display: block;
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(1) {
-    --container-width: calc(var(--width) / 3);
-    width: calc(var(--width) / 3);
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(1) img {
-    margin: calc(var(--height) * 0) calc(var(--container-width) / 10);
-    width: calc(var(--container-width) * 0.8);
-    height: auto;
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(2) {
-    width: calc(var(--width) * (2 / 3));
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(2) div {
-    width: calc(var(--width) * (2 / 3));
-    font-size: var(--textSize);
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(2) p {
-    margin: calc(var(--height) / 100) calc(var(--width) * 0);
-    font-size: calc(var(--textSize) * 0.729);
-    letter-spacing: calc(var(--width) / 1000);
-}
-#Archive header {
-    --header-height: calc(var(--height) / 10);
+#About footer {
     height: calc(var(--height) / 10);
 }
-#Archive header div {
+#About main {
+    height: var(--main-height);
+    display: flex;
+    --main-height: calc(var(--height) * 0.8);
+    --main-width: var(--width);
+}
+#About footer {
+    display: flex;
+    --footer-height: calc(var(--height) / 10);
+    --footer-width: var(--width);
+    align-items: center;
+}
+#About header {
+    --header-height: calc(var(--height) / 10);
+    --header-width: var(--width);
+}
+#About header nav {
+    height: var(--header-height);
+    display: flex;
+}
+#About header nav div:nth-child(1) {
+    display: none;
+}
+#About header nav div:nth-child(2) {
+    display: flex;
+    width: var(--header-width);
+    height: var(--header-height);
+}
+#About header nav div:nth-child(2) div {
+    display: flex;
+    width: calc(var(--header-width) / 3);
+    justify-content: center;
+    align-items: center;
+    height: var(--header-height);
+}
+#About header nav div:nth-child(2) div a {
+    width: calc(var(--header-width) / 6);
     height: calc(var(--header-height) / 2);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: calc(var(--header-height) / 4);
+    font-size: calc(var(--textSize) * (20 / 17.6));
 }
-#Archive header div:nth-child(1) a {
-    font-size: var(--textSize);
-}
-#Archive header div:nth-child(2) {
-    font-size: calc(var(--textSize) * 0.9);
-}
-#Archive main {
-    height: calc(var(--height) * 0.8);
-}
-#Archive footer {
-    height: calc(var(--height) / 10);
-    display: flex;
-}
-#Archive footer div {
-    width: calc(var(--width) / 4);
+#About footer div {
+    height: calc(var(--footer-height) / 2);
+    width: calc(var(--footer-width) / 4);
     display: flex;
     justify-content: center;
+}
+#About footer div a {
+    font-size: calc(var(--textSize) * (59 / 23));
+}
+#About main div {
+    width: calc(var(--main-width) / 2);
+}
+#About main div:nth-child(1) div {
+    display: flex;
     align-items: center;
+    width: calc(var(--main-width) * 0.495);
+    margin-left: calc(var(--main-width) / 200);
 }
-#Archive footer div a {
-    font-size: calc(var(--textSize) * 3.138428377);
+#About main div:nth-child(1) div:nth-child(1) {
+    font-size: calc(var(--textSize) * (40 / 19.36));
+    height: calc(var(--main-height) / 15);
 }
-#Archive main table {
-    display: block;
-    height: calc(var(--height) * 0.8);
+#About main div:nth-child(1) div:nth-child(2),
+#About main div:nth-child(1) div:nth-child(3) {
+    font-size: calc(var(--textSize) * (20 / 19.36));
+    height: calc(var(--main-height) / 30);
+    letter-spacing: calc(var(--main-width) / 500);
 }
-#Archive main table thead {
-    display: none;
+#About main div:nth-child(1) div:nth-child(3) {
+    height: calc(var(--main-height) / 15);
 }
-#Archive main table tbody {
-    display: block;
-    height: calc(var(--height) * 0.8);
-    overflow: auto;
-    scrollbar-width: none;
+#About main div:nth-child(2) p {
+    font-size: calc(var(--textSize) * (20 / 19.36));
+    letter-spacing: calc(var(--main-width) / 500);
+    margin: calc(var(--main-height) / 50) calc(var(--main-width) * 0);
 }
-#Archive main table tbody tr {
-    display: block;
-    height: auto;
-    margin: calc(var(--height) / 100) calc(var(--width) * 0);
-}
-#Archive main table tbody tr td {
-    display: flex;
-    margin: calc(var(--height) / 200) calc(var(--width) * 0);
-}
-#Archive main table tbody tr td::before {
-    display: block;
-    width: calc(var(--width) / 7);
-}
-#Archive main table tbody tr td:nth-child(1)::before {
-    content: "Year: ";
-}
-#Archive main table tbody tr td:nth-child(2)::before {
-    content: "Name: ";
-}
-#Archive main table tbody tr td:nth-child(3)::before {
-    content: "Made At: ";
-}
-#Archive main table tbody tr td:nth-child(4)::before {
-    content: "Built With: ";
-    margin-top: calc(var(--height) / 50);
-}
-#Archive main table tbody tr td:nth-child(5)::before {
-    content: "Link: ";
-}
-#Archive main table tbody tr td:nth-child(6)::before {
-    content: "Status: ";
-}
-#Archive main table tbody tr td:nth-child(4) div {
-    display: flex;
-    flex-wrap: wrap;
-}
-#Archive main table tbody tr td:nth-child(4) div div {
-    margin: calc(var(--height) / 100) calc(var(--width) / 100);
-    padding: calc(var(--height) / 100) calc(var(--width) / 100);
-    border-radius: calc(var(--height) / 25);
-}
-#Archive main table tbody tr td:nth-child(4) div div:nth-child(1) {
-    margin-left: calc(var(--width) * 0);
+#About main div:nth-child(2) p:nth-child(1) {
+    margin-top: calc(var(--main-height) * 0);
 }
