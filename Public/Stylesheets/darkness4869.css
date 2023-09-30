@@ -293,7 +293,8 @@ body {
 #About footer div a,
 #Experience footer div a,
 #Projects footer div a,
-#Archive footer div a {
+#Archive footer div a,
+#Experience main #experienceBar div:nth-child(5) a {
     color: var(--color4);
 }
 #About footer div a:hover,
@@ -327,7 +328,8 @@ body {
 #Archive header div:nth-child(1) a:hover,
 #Archive main table tbody tr td,
 #Archive main table thead tr th,
-#Archive main table tbody tr td:nth-child(5) a:hover {
+#Archive main table tbody tr td:nth-child(5) a:hover,
+#Experience main #experienceBar div:nth-child(5) a:hover {
     color: var(--color2);
 }
 #Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) div,
@@ -339,7 +341,8 @@ body {
 #Experience main div:nth-child(2) div:nth-child(4) a,
 #Projects main div:nth-child(2) #archive a,
 #Archive main table tbody tr td:nth-child(5) a,
-#Projects main div:nth-child(2) .project a {
+#Projects main div:nth-child(2) .project a,
+#Experience main #experienceBar div:nth-child(5) a {
     text-decoration: none;
 }
 #Experience
@@ -350,7 +353,8 @@ body {
     div:nth-child(2)
     p
     a:hover,
-#Experience main div:nth-child(2) div:nth-child(4) a:hover {
+#Experience main div:nth-child(2) div:nth-child(4) a:hover,
+#Experience main #experienceBar div:nth-child(5) a:hover {
     text-decoration: underline;
 }
 #Projects main div:nth-child(2) .project a div div:nth-child(2) div {
