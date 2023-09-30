@@ -110,338 +110,78 @@ body {
     font-size: calc(var(--textSize) * 2);
 }
 #About header,
-#About header nav,
-#About header nav div,
-#Experience header,
-#Experience header nav,
-#Experience header nav div,
-#Projects header,
-#Projects header nav,
-#Projects header nav div {
-    height: calc(var(--height) / 20);
-}
-#About header nav,
-#Experience header nav,
-#Projects header nav {
-    display: flex;
-}
-#About header nav div,
-#Experience header nav div,
-#Projects header nav div {
-    width: calc(var(--width) / 2);
-}
-#About header nav div:nth-child(2),
-#Experience header nav div:nth-child(2),
-#Projects header nav div:nth-child(2) {
-    display: flex;
-}
-#About header nav div:nth-child(2) div,
-#Experience header nav div:nth-child(2) div,
-#Projects header nav div:nth-child(2) div {
-    width: calc(var(--width) / 6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#About header nav div:nth-child(2) div a,
-#Experience header nav div:nth-child(2) div a,
-#Projects header nav div:nth-child(2) div a {
-    padding: calc(var(--height) / 100) calc(var(--width) / 100);
-}
-#About footer,
-#Experience footer,
-#Projects footer,
-#Archive footer {
-    display: flex;
-    height: calc(var(--height) / 20);
-}
-#About footer div,
-#Experience footer div,
-#Projects footer div,
-#Archive footer div {
-    height: calc(var(--height) / 20);
-    width: calc(var(--width) / 4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#About footer div a,
-#Experience footer div a,
-#Projects footer div a,
-#Archive footer div a {
-    font-size: calc(var(--textSize) * 1.6);
-}
-#About main,
-#Experience main,
-#Projects main {
-    height: calc(var(--height) * 0.9);
-    display: flex;
-}
-#About main div,
-#Experience main div,
-#Projects main div {
-    width: calc(var(--width) / 2);
-}
-#About main div:nth-child(1) div,
-#Experience main div:nth-child(1) div,
-#Projects main div:nth-child(1) div {
-    padding-left: calc(var(--width) / 100);
-    width: calc(var(--width) * 0.49);
-    padding-top: calc(var(--height) / 25);
-    height: auto;
-}
-#About main div:nth-child(1) div:nth-child(1),
-#Experience main div:nth-child(1) div:nth-child(1),
-#Projects main div:nth-child(1) div:nth-child(1) {
-    font-size: calc(var(--textSize) * 2);
-}
-#Projects main div:nth-child(1) div:nth-child(1) {
-    font-size: calc(var(--textSize) * 1);
-}
-#About main div:nth-child(1) div:nth-child(2),
-#About main div:nth-child(1) div:nth-child(3),
-#Experience main div:nth-child(1) div:nth-child(2),
-#Experience main div:nth-child(1) div:nth-child(3),
-#Projects main div:nth-child(1) div:nth-child(2),
-#Projects main div:nth-child(1) div:nth-child(3) {
-    padding-top: calc(var(--height) / 100);
-}
-#About main div p {
-    margin: calc(var(--height) / 25) calc(var(--width) * 0);
-    letter-spacing: calc(var(--width) / 1000);
-}
-#Experience main div,
-#Projects main div:nth-child(2) {
-    width: calc(var(--width) / 2);
-    height: calc(var(--height) * 0.9);
-    overflow: auto;
-    scrollbar-width: none;
-}
-#Experience main div::-webkit-scrollbar,
-#Projects main div:nth-child(2)::-webkit-scrollbar,
-#Archive main table tbody::-webkit-scrollbar {
-    display: none;
-}
-#Experience main div:nth-child(2) div {
-    display: flex;
-    height: auto;
-}
-#Experience main div:nth-child(2) div div,
-#Experience main div:nth-child(2) div div:nth-child(1) {
-    font-size: var(--textSize);
-}
-#Experience main div:nth-child(2) div div {
-    --container-width: calc(var(--width) / 4);
-    width: var(--container-width);
-    padding-left: calc(var(--width) * 0);
-    display: block;
-    height: auto;
-}
-#Experience main div:nth-child(2) div div:nth-child(1) {
-    width: calc(var(--container-width) / 2);
-    padding-top: calc(var(--height) / 50);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) {
-    width: calc(var(--container-width) * (3 / 2));
-    padding: calc(var(--height) * 0);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div {
-    --skill-used-width: calc(var(--container-width) * (3 / 2));
-    width: calc(var(--container-width) * (3 / 2));
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(1) {
-    height: calc(var(--height) / 30);
-    padding-top: calc(var(--height) / 50);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(2) {
-    padding-top: calc(var(--height) / 100);
+#About footer {
     height: calc(var(--height) / 10);
 }
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(2) p {
-    margin: calc(var(--height) * 0) calc(var(--width) * 0);
-    letter-spacing: calc(var(--container-width) / 1000);
-}
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) {
+#About main {
+    --main-height: calc(var(--height) * 0.8);
     display: flex;
-    height: calc(var(--height) / 15);
-    justify-content: space-evenly;
-    padding-top: calc(var(--height) / 50);
+    height: var(--main-height);
+    --main-width: var(--width);
 }
-#Experience main div:nth-child(2) div div:nth-child(2) div:nth-child(3) div {
-    width: auto;
-    display: block;
-    height: calc(var(--height) / 30);
-    padding: calc(var(--height) / 60) calc(var(--skill-used-width) / 60);
-    border-radius: calc(var(--height) / 30);
+#About header nav {
+    display: flex;
+    height: inherit;
 }
-#Experience main div:nth-child(2) div:nth-child(1) div:nth-child(1) {
-    padding-top: calc(var(--height) / 25);
-}
-#Experience
-    main
-    div:nth-child(2)
-    div:nth-child(1)
-    div:nth-child(2)
-    div:nth-child(1) {
-    padding-top: calc(var(--height) / 25);
-}
-#Experience
-    main
-    div:nth-child(2)
-    div:nth-child(1)
-    div:nth-child(2)
-    div:nth-child(3)
-    div {
-    padding: calc(var(--height) / 60) calc(var(--skill-used-width) / 60);
-}
-#Experience main div:nth-child(2) div:nth-child(5) {
-    display: block;
-}
-#Projects main div:nth-child(2) .project {
-    height: auto;
-}
-#Projects main div:nth-child(2) .project a {
+#About header nav div {
     width: calc(var(--width) / 2);
     display: block;
 }
-#Projects main div:nth-child(2) .project a div {
+#About header nav div:nth-child(2) {
     display: flex;
-    padding: calc(var(--height) * 0) calc(var(--width) * 0);
-    border-radius: calc(var(--width) / 100);
-    width: calc(var(--width) / 2);
+    justify-content: center;
+    align-items: center;
 }
-#Projects main div:nth-child(2) .project a div div {
-    --project-container-width: calc(var(--width) / 4);
+#About header nav div:nth-child(2) div {
+    width: calc(var(--width) / 6);
+    height: calc(var(--height) / 20);
+    display: flex;
+    justify-content: center;
+}
+#About header nav div:nth-child(2) div a {
+    width: calc(var(--width) / 12);
+    height: calc(var(--height) / 20);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: calc(var(--height) / 40);
+}
+#About footer {
+    display: flex;
+    align-items: center;
+}
+#About footer div {
     width: calc(var(--width) / 4);
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(1) {
-    justify-content: center;
-    width: calc(var(--project-container-width) / 2);
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(2) {
-    width: calc(var(--project-container-width) * (3 / 2));
-    display: block;
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(1) img {
-    margin-top: calc(var(--height) / 100);
-    width: calc(var(--project-container-width) / 3);
-    height: fit-content;
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(2) div {
-    display: block;
-    width: calc(var(--project-container-width) * (3 / 2));
-    height: calc(var(--height) / 30);
-    padding-left: calc(var(--project-container-width) / 120);
-}
-#Projects main div:nth-child(2) .project a div div:nth-child(2) p {
-    margin: calc(var(--height) / 50) calc(var(--width) * 0);
-    letter-spacing: calc(var(--width) / 1000);
-    height: calc(var(--height) / 7);
-}
-#Projects main div:nth-child(2) #archive {
-    height: calc(var(--height) / 25);
-}
-#Projects main div:nth-child(2) #archive a {
-    font-size: var(--textSize);
-}
-#Archive header {
-    height: calc(var(--height) * (7 / 60));
-}
-#Archive header div:nth-child(1) {
-    height: calc(var(--height) / 15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#Archive header div:nth-child(2) {
-    font-size: calc(var(--textSize) * 1.1);
     height: calc(var(--height) / 20);
     display: flex;
-    align-items: center;
     justify-content: center;
 }
-#Archive header div:nth-child(1) a {
+#About footer div a {
+    font-size: calc(var(--textSize) * 1.866666667);
+}
+#About main div {
+    width: calc(var(--main-width) / 2);
+}
+#About main div:nth-child(1) div {
+    display: flex;
+    align-items: center;
+    width: calc(var(--main-width) / 2.02);
+    margin-left: calc(var(--main-width) / 200);
+}
+#About main div:nth-child(1) div:nth-child(1) {
     font-size: calc(var(--textSize) * 2);
+    height: calc(var(--main-height) / 12);
 }
-#Archive main,
-#Archive main table {
-    height: calc(var(--height) * (5 / 6));
+#About main div:nth-child(1) div:nth-child(2),
+#About main div:nth-child(1) div:nth-child(3) {
+    letter-spacing: calc(var(--main-width) / 1000);
+    height: calc(var(--main-height) / 24);
 }
-#Archive main table {
-    display: block;
+#About main div:nth-child(2) p {
+    letter-spacing: calc(var(--main-width) / 500);
+    height: auto;
+    margin: calc(var(--main-height) / 24) calc(var(--main-width) * 0);
 }
-#Archive main table thead {
-    height: calc(var(--height) / 20);
-}
-#Archive main table thead tr {
-    height: calc(var(--height) / 20);
-}
-#Archive main table thead tr th {
-    width: calc(var(--width) / 6);
-    font-size: calc(var(--textSize) * 1.1);
-}
-#Archive main table thead tr th:nth-child(1) {
-    width: calc(var(--width) / 24);
-}
-#Archive main table thead tr th:nth-child(2) {
-    width: calc(var(--width) * (241 / 1056));
-}
-#Archive main table thead tr th:nth-child(3) {
-    width: calc(var(--width) * (241 / 1056));
-}
-#Archive main table thead tr th:nth-child(4) {
-    width: calc(var(--width) * (241 / 1056));
-}
-#Archive main table thead tr th:nth-child(5) {
-    width: calc(var(--width) * (241 / 1056));
-}
-#Archive main table thead tr th:nth-child(6) {
-    width: calc(var(--width) / 22);
-}
-#Archive main table tbody {
-    height: calc(var(--height) * (47 / 60));
-    display: block;
-    overflow: auto;
-    scrollbar-width: none;
-}
-#Archive main table tbody tr {
-    display: block;
-}
-#Archive main table tbody tr td {
-    width: calc(var(--width) / 6);
-}
-#Archive main table tbody tr td:nth-child(1) {
-    text-align: center;
-    width: calc(var(--width) / 24);
-}
-#Archive main table tbody tr td:nth-child(2) {
-    width: calc(var(--width) * (241 / 1056));
-}
-#Archive main table tbody tr td:nth-child(3) {
-    width: calc(var(--width) * (241 / 1056));
-    text-align: center;
-}
-#Archive main table tbody tr td:nth-child(4) {
-    width: calc(var(--width) * (241 / 1056));
-}
-#Archive main table tbody tr td:nth-child(5) {
-    width: calc(var(--width) * (241 / 1056));
-    text-align: center;
-}
-#Archive main table tbody tr td:nth-child(6) {
-    text-align: center;
-    width: calc(var(--width) / 22);
-}
-#Archive main table tbody tr td:nth-child(5) a {
-    font-size: var(--textSize);
-}
-#Archive main table tbody tr td:nth-child(4) div {
-    display: flex;
-    flex-wrap: wrap;
-}
-#Archive main table tbody tr td:nth-child(4) div div {
-    display: block;
-    margin: calc(var(--height) / 200) calc(var(--width) / 200);
-    padding: calc(var(--height) / 200) calc(var(--width) / 200);
-    border-radius: calc(var(--width) / 100);
+#About main div:nth-child(2) p:nth-child(1) {
+    margin-top: calc(var(--main-height) * 0);
 }
