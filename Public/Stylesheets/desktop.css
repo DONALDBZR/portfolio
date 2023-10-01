@@ -367,6 +367,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: normal;
+    padding: calc(var(--card-width) * 0);
 }
 #Projects
     main
