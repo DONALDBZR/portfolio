@@ -103,83 +103,101 @@ body {
     bottom: calc(var(--percentage) / 2);
 }
 #About header,
-#About footer {
+#About footer,
+#Experience header,
+#Experience footer {
     height: calc(var(--height) / 10);
 }
-#About main {
+#About main,
+#Experience main {
     height: var(--main-height);
-    display: flex;
+
     --main-height: calc(var(--height) * 0.8);
     --main-width: var(--width);
 }
-#About footer {
+#About footer,
+#Experience footer {
     display: flex;
     --footer-height: calc(var(--height) / 10);
     --footer-width: var(--width);
     align-items: center;
 }
-#About header {
+#About header,
+#Experience header {
     --header-height: calc(var(--height) / 10);
     --header-width: var(--width);
 }
-#About header nav {
+#About header nav,
+#Experience header nav {
     height: var(--header-height);
     display: flex;
 }
-#About header nav div:nth-child(1) {
+#About header nav div:nth-child(1),
+#Experience header nav div:nth-child(1) {
     display: none;
 }
-#About header nav div:nth-child(2) {
+#About header nav div:nth-child(2),
+#Experience header nav div:nth-child(2) {
     display: flex;
     width: var(--header-width);
     height: var(--header-height);
 }
-#About header nav div:nth-child(2) div {
+#About header nav div:nth-child(2) div,
+#Experience header nav div:nth-child(2) div {
     display: flex;
     width: calc(var(--header-width) / 3);
     justify-content: center;
     align-items: center;
     height: var(--header-height);
 }
-#About header nav div:nth-child(2) div a {
+#About header nav div:nth-child(2) div a,
+#Experience header nav div:nth-child(2) div a {
     width: calc(var(--header-width) / 6);
     height: calc(var(--header-height) / 2);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: calc(var(--header-height) / 4);
-    font-size: calc(var(--textSize) * (20 / 17.6));
+    font-size: calc(var(--textSize) * (20 / 19.36));
 }
-#About footer div {
+#About footer div,
+#Experience footer div {
     height: calc(var(--footer-height) / 2);
     width: calc(var(--footer-width) / 4);
     display: flex;
     justify-content: center;
 }
-#About footer div a {
+#About footer div a,
+#Experience footer div a {
     font-size: calc(var(--textSize) * (59 / 23));
 }
-#About main div {
-    width: calc(var(--main-width) / 2);
+#About main div,
+#Experience main div {
+    width: var(--main-width);
+    height: calc(var(--main-height) * (2 / 15));
 }
-#About main div:nth-child(1) div {
+#About main div:nth-child(1) div #Experience main div:nth-child(1) div {
     display: flex;
     align-items: center;
     width: calc(var(--main-width) * 0.495);
     margin-left: calc(var(--main-width) / 200);
 }
-#About main div:nth-child(1) div:nth-child(1) {
+#About main div:nth-child(1) div:nth-child(1),
+#Experience main div:nth-child(1) div:nth-child(1) {
     font-size: calc(var(--textSize) * (40 / 19.36));
     height: calc(var(--main-height) / 15);
 }
 #About main div:nth-child(1) div:nth-child(2),
-#About main div:nth-child(1) div:nth-child(3) {
+#About main div:nth-child(1) div:nth-child(3),
+#Experience main div:nth-child(1) div:nth-child(2),
+#Experience main div:nth-child(1) div:nth-child(3) {
     font-size: calc(var(--textSize) * (20 / 19.36));
     height: calc(var(--main-height) / 30);
     letter-spacing: calc(var(--main-width) / 500);
 }
-#About main div:nth-child(1) div:nth-child(3) {
-    height: calc(var(--main-height) / 15);
+#About main div:nth-child(1) div:nth-child(3),
+#Experience main div:nth-child(1) div:nth-child(3) {
+    height: calc(var(--main-height) / 30);
 }
 #About main div:nth-child(2) p {
     font-size: calc(var(--textSize) * (20 / 19.36));
@@ -188,4 +206,98 @@ body {
 }
 #About main div:nth-child(2) p:nth-child(1) {
     margin-top: calc(var(--main-height) * 0);
+}
+#Experience main #experienceBar {
+    --experience-bar-width: var(--main-width);
+    --experience-bar-height: calc(var(--main-height) * (13 / 15));
+    overflow: auto;
+    height: var(--experience-bar-height);
+    width: var(--experience-bar-width);
+}
+#Experience main #experienceBar::-webkit-scrollbar {
+    display: none;
+}
+#Experience main #experienceBar div {
+    display: flex;
+    --card-width: var(--experience-bar-width);
+    height: auto;
+}
+#Experience main #experienceBar div div {
+    width: calc(var(--card-width) / 2);
+}
+#Experience main #experienceBar div div:nth-child(1) {
+    font-size: calc(var(--textSize) * (20 / 19.36));
+    height: calc(var(--experience-bar-height) / 30);
+    width: calc(var(--card-width) / 4);
+    align-items: center;
+}
+#Experience main #experienceBar div div:nth-child(2) {
+    display: block;
+    width: calc(var(--card-width) * (3 / 4));
+    height: auto;
+}
+#Experience main #experienceBar div div:nth-child(2) div {
+    width: calc(var(--card-width) * (3 / 4));
+    display: flex;
+    align-items: center;
+}
+#Experience main #experienceBar div div:nth-child(2) div:nth-child(1) {
+    font-size: calc(var(--textSize) * (25 / 19.36));
+    height: calc(var(--experience-bar-height) / 20);
+}
+#Experience main #experienceBar div div:nth-child(2) div:nth-child(2) {
+    height: auto;
+}
+#Experience main #experienceBar div div:nth-child(2) div:nth-child(3) {
+    flex-wrap: wrap;
+    --skills-width: calc(var(--card-width) * (3 / 4));
+    height: calc(var(--experience-bar-height) * 0.14);
+}
+#Experience
+    main
+    #experienceBar
+    div:nth-child(1)
+    div:nth-child(2)
+    div:nth-child(1) {
+    font-size: calc(var(--textSize) * (25 / 22));
+}
+#Experience main #experienceBar div div:nth-child(2) div:nth-child(2) p {
+    font-size: calc(var(--textSize) * (20 / 19.36));
+    height: auto;
+    margin: calc(var(--experience-bar-height) / 100) calc(var(--card-width) * 0);
+}
+#Experience
+    main
+    #experienceBar
+    div:nth-child(1)
+    div:nth-child(2)
+    div:nth-child(2)
+    p {
+    font-size: calc(var(--textSize) * (20 / 25));
+}
+#Experience main #experienceBar div div:nth-child(2) div:nth-child(3) div {
+    font-size: calc(var(--textSize) * (20 / 19.36));
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--skills-width) / 5);
+    height: calc(var(--experience-bar-height) / 20);
+    margin: calc(var(--experience-bar-height) / 100)
+        calc(var(--skills-width) / 100);
+    border-radius: calc(var(--experience-bar-height) / 40);
+}
+#Experience
+    main
+    #experienceBar
+    div:nth-child(1)
+    div:nth-child(2)
+    div:nth-child(3)
+    div {
+    font-size: calc(var(--textSize) * (20 / 25));
+}
+#Experience main #experienceBar div:nth-child(5) {
+    height: calc(var(--experience-bar-height) / 30);
+    align-items: center;
+}
+#Experience main #experienceBar div:nth-child(5) a {
+    font-size: calc(var(--textSize) * (20 / 19.36));
 }
