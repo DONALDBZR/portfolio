@@ -105,45 +105,53 @@ body {
 #About header,
 #About footer,
 #Experience header,
-#Experience footer {
+#Experience footer,
+#Projects header,
+#Projects footer {
     height: calc(var(--height) / 10);
 }
 #About main,
-#Experience main {
+#Experience main,
+#Projects main {
     height: var(--main-height);
-
     --main-height: calc(var(--height) * 0.8);
     --main-width: var(--width);
 }
 #About footer,
-#Experience footer {
+#Experience footer,
+#Projects footer {
     display: flex;
     --footer-height: calc(var(--height) / 10);
     --footer-width: var(--width);
     align-items: center;
 }
 #About header,
-#Experience header {
+#Experience header,
+#Projects header {
     --header-height: calc(var(--height) / 10);
     --header-width: var(--width);
 }
 #About header nav,
-#Experience header nav {
+#Experience header nav,
+#Projects header nav {
     height: var(--header-height);
     display: flex;
 }
 #About header nav div:nth-child(1),
-#Experience header nav div:nth-child(1) {
+#Experience header nav div:nth-child(1),
+#Projects header nav div:nth-child(1) {
     display: none;
 }
 #About header nav div:nth-child(2),
-#Experience header nav div:nth-child(2) {
+#Experience header nav div:nth-child(2),
+#Projects header nav div:nth-child(2) {
     display: flex;
     width: var(--header-width);
     height: var(--header-height);
 }
 #About header nav div:nth-child(2) div,
-#Experience header nav div:nth-child(2) div {
+#Experience header nav div:nth-child(2) div,
+#Projects header nav div:nth-child(2) div {
     display: flex;
     width: calc(var(--header-width) / 3);
     justify-content: center;
@@ -151,7 +159,8 @@ body {
     height: var(--header-height);
 }
 #About header nav div:nth-child(2) div a,
-#Experience header nav div:nth-child(2) div a {
+#Experience header nav div:nth-child(2) div a,
+#Projects header nav div:nth-child(2) div a {
     width: calc(var(--header-width) / 6);
     height: calc(var(--header-height) / 2);
     display: flex;
@@ -161,14 +170,16 @@ body {
     font-size: calc(var(--textSize) * (20 / 19.36));
 }
 #About footer div,
-#Experience footer div {
+#Experience footer div,
+#Projects footer div {
     height: calc(var(--footer-height) / 2);
     width: calc(var(--footer-width) / 4);
     display: flex;
     justify-content: center;
 }
 #About footer div a,
-#Experience footer div a {
+#Experience footer div a,
+#Projects footer div a {
     font-size: calc(var(--textSize) * (59 / 23));
 }
 #About main div,
@@ -299,5 +310,95 @@ body {
     align-items: center;
 }
 #Experience main #experienceBar div:nth-child(5) a {
+    font-size: calc(var(--textSize) * (20 / 19.36));
+}
+#Projects main div {
+}
+#Projects main div:nth-child(1) {
+    height: calc(var(--main-height) * (2 / 15));
+}
+#Projects main div:nth-child(1) div {
+    display: flex;
+    align-items: center;
+}
+#Projects main div:nth-child(1) div:nth-child(1) {
+    font-size: calc(var(--textSize) * (40 / 19.36));
+    height: calc(var(--main-height) / 15);
+}
+#Projects main div:nth-child(1) div:nth-child(2),
+#Projects main div:nth-child(1) div:nth-child(3) {
+    font-size: calc(var(--textSize) * (20 / 19.36));
+    letter-spacing: calc(var(--main-width) / 500);
+    height: calc(var(--main-height) / 30);
+}
+#Projects main div:nth-child(1) div:nth-child(3) {
+}
+#Projects main div:nth-child(2) {
+    height: calc(var(--main-height) * (13 / 15));
+    overflow: auto;
+}
+#Projects main div:nth-child(2)::-webkit-scrollbar {
+    display: none;
+}
+#Projects main div:nth-child(2) .project {
+    height: auto;
+    margin: calc(var(--main-height) / 50) calc(var(--main-width) * 0);
+}
+#Projects main div:nth-child(2) .project a {
+    padding: ;
+}
+#Projects main div:nth-child(2) .project a div {
+    height: auto;
+    margin: calc(var(--main-height) / 50) calc(var(--main-width) * 0);
+    display: flex;
+    border-radius: calc(var(--main-height) / 12.5);
+}
+#Projects main div:nth-child(2) .project a div div {
+    --card-width: calc(var(--main-width) / 2);
+    width: var(--card-width);
+}
+#Projects main div:nth-child(2) .project a div div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: calc(var(--card-width) * 0);
+}
+#Projects main div:nth-child(2) .project a div div:nth-child(1) img {
+    width: calc(var(--card-width) * (2 / 3));
+    height: auto;
+}
+#Projects main div:nth-child(2) .project a div div:nth-child(2) {
+    display: block;
+    overflow: unset;
+    height: auto;
+}
+#Projects main div:nth-child(2) .project a div div:nth-child(2) div {
+    font-size: calc(var(--textSize) * (30 / 22));
+    justify-content: start;
+    height: calc(var(--main-height) / 22.5);
+}
+#Projects
+    main
+    div:nth-child(2)
+    .project:nth-child(1)
+    a
+    div
+    div:nth-child(2)
+    div {
+    font-size: calc(var(--textSize) * (30 / 50));
+}
+#Projects main div:nth-child(2) .project a div div:nth-child(2) p {
+    font-size: calc(var(--textSize) * (20 / 22));
+    margin: calc(var(--main-height) / 100) calc(var(--card-width) * 0);
+}
+#Projects main div:nth-child(2) .project:nth-child(1) a div div:nth-child(2) p {
+    font-size: calc(var(--textSize) * (20 / 50));
+}
+#Projects main div:nth-child(2) #archive {
+    display: flex;
+    align-items: center;
+    height: calc(var(--main-height) / 30);
+}
+#Projects main div:nth-child(2) #archive a {
     font-size: calc(var(--textSize) * (20 / 19.36));
 }
