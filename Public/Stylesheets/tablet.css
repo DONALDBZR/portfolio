@@ -312,8 +312,6 @@ body {
 #Experience main #experienceBar div:nth-child(5) a {
     font-size: calc(var(--textSize) * (20 / 19.36));
 }
-#Projects main div {
-}
 #Projects main div:nth-child(1) {
     height: calc(var(--main-height) * (2 / 15));
 }
@@ -331,8 +329,6 @@ body {
     letter-spacing: calc(var(--main-width) / 500);
     height: calc(var(--main-height) / 30);
 }
-#Projects main div:nth-child(1) div:nth-child(3) {
-}
 #Projects main div:nth-child(2) {
     height: calc(var(--main-height) * (13 / 15));
     overflow: auto;
@@ -343,9 +339,6 @@ body {
 #Projects main div:nth-child(2) .project {
     height: auto;
     margin: calc(var(--main-height) / 50) calc(var(--main-width) * 0);
-}
-#Projects main div:nth-child(2) .project a {
-    padding: ;
 }
 #Projects main div:nth-child(2) .project a div {
     height: auto;
