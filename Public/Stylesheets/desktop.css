@@ -165,13 +165,15 @@ body {
 }
 #About footer,
 #Experience footer,
-#Projects footer {
+#Projects footer,
+#Archive footer {
     display: flex;
     align-items: center;
 }
 #About footer div,
 #Experience footer div,
-#Projects footer div {
+#Projects footer div,
+#Archive footer div {
     width: calc(var(--width) / 4);
     height: calc(var(--height) / 20);
     display: flex;
@@ -179,7 +181,8 @@ body {
 }
 #About footer div a,
 #Experience footer div a,
-#Projects footer div a {
+#Projects footer div a,
+#Archive footer div a {
     font-size: calc(var(--textSize) * 1.866666667);
 }
 #About main div,
@@ -393,4 +396,142 @@ body {
 }
 #Projects main div:nth-child(2) #archive a {
     font-size: calc(var(--textSize) * (20 / 16));
+}
+#Archive header {
+    height: calc(var(--height) * (7 / 60));
+}
+#Archive header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: calc(var(--width) / 500);
+}
+#Archive header div:nth-child(1) {
+    height: calc(var(--height) / 15);
+}
+#Archive header div:nth-child(1) a {
+    font-size: calc(var(--textSize) * (30 / 16));
+}
+#Archive header div:nth-child(2) {
+    font-size: calc(var(--textSize) * (20 / 16));
+    height: calc(var(--height) / 20);
+}
+#Archive main {
+    --main-width: var(--width);
+    --main-height: calc(var(--height) * (47 / 60));
+    width: var(--main-width);
+    height: var(--main-height);
+}
+#Archive main table {
+    --table-width: var(--main-width);
+    --table-height: var(--main-height);
+    display: block;
+    width: var(--table-width);
+    height: var(--table-height);
+}
+#Archive main table thead {
+    display: block;
+    width: var(--table-width);
+    height: calc(var(--table-height) / 20);
+}
+#Archive main table thead tr {
+    display: flex;
+    width: var(--table-width);
+    height: calc(var(--table-height) / 20);
+}
+#Archive main table thead tr th {
+    display: flex;
+    font-size: calc(var(--textSize) * (20 / 16));
+    height: calc(var(--table-height) / 20);
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--table-width) / 6);
+}
+#Archive main table tbody {
+    display: block;
+    --table-body-width: var(--table-width);
+    --table-body-height: calc(var(--table-height) * (19 / 20));
+    width: var(--table-body-width);
+    height: var(--table-body-height);
+    overflow: auto;
+}
+#Archive::-webkit-scrollbar,
+#Archive main table tbody::-webkit-scrollbar {
+    display: none;
+}
+#Archive main table tbody tr {
+    display: flex;
+    width: var(--table-body-width);
+    height: auto;
+}
+#Archive main table tbody tr td {
+    display: flex;
+    height: auto;
+    width: calc(var(--table-body-width) / 6);
+    align-items: center;
+    justify-content: center;
+}
+#Archive footer {
+    height: calc(var(--height) / 10);
+}
+#Archive main table thead tr th:nth-child(1),
+#Archive main table tbody tr td:nth-child(1) {
+    width: calc(var(--table-width) * (5 / 100));
+}
+#Archive main table thead tr th:nth-child(2),
+#Archive main table tbody tr td:nth-child(2) {
+    width: calc(var(--table-width) * (19 / 100));
+}
+#Archive main table thead tr th:nth-child(3),
+#Archive main table tbody tr td:nth-child(3) {
+    width: calc(var(--table-width) * (19 / 100));
+}
+#Archive main table thead tr th:nth-child(4),
+#Archive main table tbody tr td:nth-child(4) {
+    width: calc(var(--table-width) * (29 / 100));
+}
+#Archive main table thead tr th:nth-child(5),
+#Archive main table tbody tr td:nth-child(5) {
+    width: calc(var(--table-width) * (22 / 100));
+}
+#Archive main table thead tr th:nth-child(6),
+#Archive main table tbody tr td:nth-child(6) {
+    width: calc(var(--table-width) * (5 / 100));
+}
+#Archive main table tbody tr td:nth-child(1),
+#Archive main table tbody tr td:nth-child(2),
+#Archive main table tbody tr td:nth-child(3),
+#Archive main table tbody tr td:nth-child(5) {
+    font-size: calc(var(--textSize) * (16 / 16));
+    letter-spacing: calc(var(--table-body-width) / 1000);
+}
+#Archive main table tbody tr td:nth-child(4) {
+    justify-content: normal;
+}
+#Archive main table tbody tr td:nth-child(4) div {
+    --table-data-fourth-width: calc(var(--table-width) * (41 / 100));
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--table-data-fourth-width);
+    justify-content: space-evenly;
+}
+#Archive main table tbody tr td:nth-child(4) div div {
+    font-size: calc(var(--textSize) * (20 / 16));
+    flex-wrap: nowrap;
+    align-items: center;
+    height: calc(var(--table-body-height) / 15);
+    justify-content: center;
+    width: calc(var(--table-data-fourth-width) / 4);
+    border-radius: calc(var(--table-body-height) / 30);
+    margin: calc(var(--table-body-height) / 100)
+        calc(var(--table-data-fourth-width) / 100);
+    letter-spacing: calc(var(--table-data-fourth-width) / 250);
+}
+#Archive main table tbody tr:nth-child(3) td:nth-child(5) a,
+#Archive main table tbody tr:nth-child(4) td:nth-child(5) a,
+#Archive main table tbody tr:nth-child(8) td:nth-child(5) a {
+    font-size: calc(var(--textSize) * (40 / 16));
+}
+#Archive main table tbody tr td:nth-child(6) {
+    font-size: calc(var(--textSize) * (30 / 16));
 }
