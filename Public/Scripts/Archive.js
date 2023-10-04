@@ -24,7 +24,7 @@ class Application extends React.Component {
                 },
                 {
                     year: 2023,
-                    name: "YouTube Downloader",
+                    name: "Extractio",
                     from: "",
                     technologiesUsed: [
                         "Python",
