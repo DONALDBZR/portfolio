@@ -107,7 +107,8 @@ body {
 #Experience header,
 #Experience footer,
 #Projects header,
-#Projects footer {
+#Projects footer,
+#Archive footer {
     height: calc(var(--height) / 10);
 }
 #About main,
@@ -119,7 +120,8 @@ body {
 }
 #About footer,
 #Experience footer,
-#Projects footer {
+#Projects footer,
+#Archive footer {
     display: flex;
     align-items: center;
 }
@@ -162,7 +164,8 @@ body {
 }
 #About footer div,
 #Experience footer div,
-#Projects footer div {
+#Projects footer div,
+#Archive footer div {
     width: calc(var(--width) / 4);
     display: flex;
     justify-content: center;
@@ -170,7 +173,8 @@ body {
 }
 #About footer div a,
 #Experience footer div a,
-#Projects footer div a {
+#Projects footer div a,
+#Archive footer div a {
     font-size: calc(var(--textSize) * 1.518518519);
 }
 #About main div:nth-child(1) {
@@ -343,7 +347,8 @@ body {
     --projects-width: var(--main-width);
     overflow: auto;
 }
-#Projects main div:nth-child(2)::-webkit-scrollbar {
+#Projects main div:nth-child(2)::-webkit-scrollbar,
+#Archive main table tbody::-webkit-scrollbar {
     display: none;
 }
 #Projects main div:nth-child(2) .project {
@@ -409,4 +414,110 @@ body {
 }
 #Projects main div:nth-child(2) #archive a {
     font-size: calc(var(--textSize) * (20 / 28.345));
+}
+#Archive header {
+    --header-height: calc(var(--height) / 8);
+    --header-width: var(--width);
+    height: var(--header-height);
+    width: var(--header-width);
+}
+#Archive header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: calc(var(--header-width) / 500);
+    width: var(--header-width);
+}
+#Archive header div:nth-child(1) {
+    height: calc(var(--header-height) * (2 / 3));
+}
+#Archive header div:nth-child(1) a {
+    font-size: calc(var(--textSize) * (40 / 28.345));
+}
+#Archive header div:nth-child(2) {
+    font-size: calc(var(--textSize) * (20 / 28.345));
+    height: calc(var(--header-height) / 3);
+}
+#Archive main {
+    --main-height: calc(var(--height) * (31 / 40));
+    --main-width: var(--width);
+    height: var(--main-height);
+    width: var(--main-width);
+}
+#Archive main table {
+    display: block;
+    --table-height: var(--main-height);
+    --table-width: var(--main-width);
+    height: var(--table-height);
+    width: var(--table-width);
+}
+#Archive main table thead {
+    display: none;
+}
+#Archive main table tbody {
+    display: block;
+    width: var(--table-width);
+    height: var(--table-height);
+    overflow: auto;
+}
+#Archive main table tbody tr {
+    display: block;
+    margin: calc(var(--table-height) / 50) calc(var(--table-width) * 0);
+}
+#Archive main table tbody tr td {
+    display: flex;
+    font-size: calc(var(--textSize) * (20 / 28.345));
+    letter-spacing: calc(var(--table-width) / 500);
+    margin: calc(var(--table-height) / 100) calc(var(--table-width) * 0);
+    align-items: center;
+}
+#Archive main table tbody tr td:nth-child(1),
+#Archive main table tbody tr td:nth-child(3),
+#Archive main table tbody tr td:nth-child(5),
+#Archive main table tbody tr td:nth-child(6) {
+    height: calc(var(--table-height) / 20);
+}
+#Archive main table tbody tr td:nth-child(2) {
+    height: calc(var(--table-height) / 10);
+}
+#Archive main table tbody tr td::before {
+    width: calc(var(--table-width) / 4);
+    font-size: calc(var(--textSize) * (18 / 28.345));
+}
+#Archive main table tbody tr td:nth-child(1)::before {
+    content: "Year: ";
+}
+#Archive main table tbody tr td:nth-child(2)::before {
+    content: "Name: ";
+}
+#Archive main table tbody tr td:nth-child(3)::before {
+    content: "Made At: ";
+}
+#Archive main table tbody tr td:nth-child(4)::before {
+    content: "Built With: ";
+}
+#Archive main table tbody tr td:nth-child(4) div {
+    display: flex;
+    --cell-width: calc(var(--table-width) * (3 / 4));
+    flex-wrap: wrap;
+    width: var(--cell-width);
+    justify-content: space-evenly;
+}
+#Archive main table tbody tr td:nth-child(4) div div {
+    justify-content: center;
+    align-items: center;
+    height: calc(var(--table-height) / 10);
+    width: calc(var(--cell-width) / 3);
+    border-radius: calc(var(--table-height) / 20);
+    margin: calc(var(--table-height) / 50) calc(var(--cell-width) / 50);
+    font-size: calc(var(--textSize) * (15 / 26.62));
+}
+#Archive main table tbody tr td:nth-child(5)::before {
+    content: "Link: ";
+}
+#Archive main table tbody tr td:nth-child(5) a {
+    font-size: calc(var(--textSize) * (16 / 26.62));
+}
+#Archive main table tbody tr td:nth-child(6)::before {
+    content: "Status: ";
 }
