@@ -8,6 +8,14 @@ class Application extends React.Component {
             projects: [
                 {
                     year: 2023,
+                    name: "FinClub",
+                    from: "FinClub",
+                    technologiesUsed: ["ExpressJS", "MySQL", "Angular"],
+                    link: "https://finclub.mu",
+                    status: "Complete",
+                },
+                {
+                    year: 2023,
                     name: "Parkinston",
                     from: "",
                     technologiesUsed: ["PHP", "MySQL", "React"],
