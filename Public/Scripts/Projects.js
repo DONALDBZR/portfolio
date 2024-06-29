@@ -47,28 +47,8 @@ class Main extends Application {
                 </div>
                 <div>
                     <div class="project">
-                        <a href="http://parkinston.ddns.net" target="__blank">
-                            <div>
-                                <div>
-                                    <img src="/Public/Images/Parkinston.png" />
-                                </div>
-                                <div>
-                                    <div>Online game analyzer</div>
-                                    <p>
-                                        A web application that allows a player
-                                        of League of Legends or Player Unknown
-                                        Battle Grounds to analyze his/her game
-                                        performance as well as analyzing the
-                                        game performance of his/her allies or
-                                        opponents.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project">
                         <a
-                            href="https://omnitechbros.ddns.net"
+                            href="https://omnitechbros.ddns.net:591"
                             target="__blank"
                         >
                             <div>
@@ -76,10 +56,9 @@ class Main extends Application {
                                     <img src="/Public/Images/Extractio.png" />
                                 </div>
                                 <div>
-                                    <div>YouTube Downloader</div>
+                                    <div>Extractio</div>
                                     <p>
-                                        A web application that allows anyone to
-                                        currently download content from YouTube.
+                                        A web application that allows anyone to currently download content from YouTube.  Moreover, it retrieves the current weekly trend based on the usage of the application by the users.
                                     </p>
                                 </div>
                             </div>
