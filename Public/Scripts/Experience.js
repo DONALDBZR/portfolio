@@ -47,7 +47,7 @@ class Main extends Application {
                 </div>
                 <div id="experienceBar">
                     <div>
-                        <div>Jul - Present</div>
+                        <div>Jul 2023 - Present</div>
                         <div>
                             <div>Junior Software Developer - FinClub</div>
                             <div>
@@ -64,6 +64,8 @@ class Main extends Application {
                                 <div>Linux</div>
                                 <div>ExpressJS</div>
                                 <div>Selenium</div>
+                                <div>React</div>
+                                <div>Angular</div>
                             </div>
                         </div>
                     </div>
