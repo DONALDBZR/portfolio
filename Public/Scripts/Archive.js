@@ -41,8 +41,8 @@ class Application extends React.Component {
                         "Selenium",
                         "React",
                     ],
-                    link: "https://github.com/DONALDBZR/ytd_web_app",
-                    status: "Development",
+                    link: "https://omnitechbros.ddns.net:591/",
+                    status: "Complete",
                 },
                 {
                     year: 2022,
