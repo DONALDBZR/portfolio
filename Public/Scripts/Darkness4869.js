@@ -206,3 +206,4 @@ class Darkness4869 {
     }
 }
 const application = new Darkness4869();
+window.addEventListener("resize", () => application.resizeApplication(), true);
