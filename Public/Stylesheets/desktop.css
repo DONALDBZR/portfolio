@@ -528,10 +528,13 @@ body {
     letter-spacing: calc(var(--table-data-fourth-width) / 250);
 }
 #Archive main table tbody tr:nth-child(4) td:nth-child(5) a,
-#Archive main table tbody tr:nth-child(5) td:nth-child(5) a,
 #Archive main table tbody tr:nth-child(9) td:nth-child(5) a {
     font-size: calc(var(--textSize) * (40 / 16));
 }
 #Archive main table tbody tr td:nth-child(6) {
+    font-size: calc(var(--textSize) * (30 / 16));
+}
+#Archive main table tbody tr:nth-child(6) td:nth-child(5) a,
+#Archive main table tbody tr:nth-child(10) td:nth-child(5) a {
     font-size: calc(var(--textSize) * (30 / 16));
 }
