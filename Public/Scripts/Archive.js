@@ -7,10 +7,30 @@ class Application extends React.Component {
         this.state = {
             projects: [
                 {
+                    year: 2024,
+                    name: "Corporate Database Builder",
+                    from: "",
+                    technologiesUsed: [
+                        "Python",
+                        "Selenium",
+                        "MySQL",
+                    ],
+                    link: "",
+                    status: "Development",
+                },
+                {
                     year: 2023,
                     name: "FinClub",
                     from: "FinClub",
-                    technologiesUsed: ["ExpressJS", "MySQL", "Angular"],
+                    technologiesUsed: [
+                        "ExpressJS",
+                        "PHP",
+                        "Flask",
+                        "MySQL",
+                        "Angular",
+                        "React",
+                        "Selenium",
+                    ],
                     link: "https://finclub.mu",
                     status: "Complete",
                 },
