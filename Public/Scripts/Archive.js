@@ -2,6 +2,10 @@
  * The Application that is going to be rendered in the DOM
  */
 class Application extends React.Component {
+    /**
+     * Initializing the component needed.
+     * @param {*} props 
+     */
     constructor(props) {
         super(props);
         this.state = {
@@ -141,18 +145,7 @@ class Application extends React.Component {
             ],
         };
     }
-    /**
-     * Handling the status of the project
-     * @param {string} status
-     * @returns {HTMLElement}
-     */
-    handleStatus(status) {
-        if (status == "Complete") {
-            return <i class="fa-solid fa-check"></i>;
-        } else {
-            return <i class="fa-solid fa-spinner fa-spin"></i>;
-        }
-    }
+
     /**
      * Handling the link of the project
      * @param {string} link
@@ -173,6 +166,7 @@ class Application extends React.Component {
             );
         }
     }
+
     render() {
         return [<Header />, <Main />, <Footer />];
     }
@@ -215,6 +209,7 @@ class Main extends Application {
                     </thead>
                     <tbody>
                         {this.state.projects.map((project) => {
+                            const status = (project.status == "Complete") ? <i class="fa-solid fa-check"></i> : <i class="fa-solid fa-spinner fa-spin"></i>;
                             return (
                                 <tr>
                                     <td>{project.year}</td>
@@ -232,7 +227,7 @@ class Main extends Application {
                                         </div>
                                     </td>
                                     <td>{this.handleLink(project.link)}</td>
-                                    <td>{this.handleStatus(project.status)}</td>
+                                    <td>{status}</td>
                                 </tr>
                             );
                         })}
