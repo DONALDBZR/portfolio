@@ -8,20 +8,46 @@ class Application extends React.Component {
             projects: [
                 {
                     year: 2024,
-                    name: "Corporate Database Builder",
-                    from: "",
+                    name: "Corporate Database Builder & Analyzer",
+                    from: "Darkness4869",
                     technologiesUsed: [
                         "Python",
                         "Selenium",
                         "MySQL",
+                        "React",
                     ],
                     link: "",
                     status: "Development",
                 },
                 {
+                    year: 2024,
+                    name: "FinCorp",
+                    from: "Finance Club LTD",
+                    technologiesUsed: [
+                        "Python",
+                        "Selenium",
+                        "MySQL",
+                    ],
+                    link: "https://finclub.mu",
+                    status: "Complete",
+                },
+                {
+                    year: 2023,
+                    name: "FinID",
+                    from: "Finance Club LTD",
+                    technologiesUsed: [
+                        "Python",
+                        "Selenium",
+                        "MySQL",
+                        "React",
+                    ],
+                    link: "https://finclub.mu",
+                    status: "Complete",
+                },
+                {
                     year: 2023,
                     name: "FinClub",
-                    from: "FinClub",
+                    from: "Finance Club LTD",
                     technologiesUsed: [
                         "ExpressJS",
                         "PHP",
@@ -37,9 +63,9 @@ class Application extends React.Component {
                 {
                     year: 2023,
                     name: "Parkinston",
-                    from: "",
+                    from: "Université Des Mascareignes",
                     technologiesUsed: ["PHP", "MySQL", "React"],
-                    link: "http://parkinston.ddns.net",
+                    link: "https://github.com/DONALDBZR/GamingOrientedPlatform.local",
                     status: "Complete",
                 },
                 {
@@ -53,7 +79,7 @@ class Application extends React.Component {
                 {
                     year: 2023,
                     name: "Extractio",
-                    from: "",
+                    from: "Darkness4869",
                     technologiesUsed: [
                         "Python",
                         "MySQL",
@@ -67,7 +93,7 @@ class Application extends React.Component {
                 {
                     year: 2022,
                     name: "Chat Application",
-                    from: "",
+                    from: "Darkness4869",
                     technologiesUsed: ["PHP", "MySQL", "React"],
                     link: "https://github.com/DONALDBZR/chat",
                     status: "Development",
@@ -75,7 +101,7 @@ class Application extends React.Component {
                 {
                     year: 2022,
                     name: "Supreme Court Portal",
-                    from: "Agileum",
+                    from: "Agileum LTD",
                     technologiesUsed: ["PHP", "MySQL", "React", "Drupal"],
                     link: "https://supremecourt.govmu.org/",
                     status: "Complete",
@@ -83,7 +109,7 @@ class Application extends React.Component {
                 {
                     year: 2022,
                     name: "E-Filing",
-                    from: "Agileum",
+                    from: "Agileum LTD",
                     technologiesUsed: ["PHP", "MySQL", "React", "Drupal"],
                     link: "https://eservices.mra.mu/",
                     status: "Complete",
@@ -91,7 +117,7 @@ class Application extends React.Component {
                 {
                     year: 2021,
                     name: "RT Knits Production System",
-                    from: "RT Knits",
+                    from: "RT Knits LTD",
                     technologiesUsed: ["FileMaker"],
                     link: "",
                     status: "Complete",
@@ -107,7 +133,7 @@ class Application extends React.Component {
                 {
                     year: 2020,
                     name: "Rakatoo Associates Website",
-                    from: "Rakatoo Associates",
+                    from: "Rakatoo Associates LTD",
                     technologiesUsed: ["PHP", "React"],
                     link: "http://rakatooassociatesltd.com",
                     status: "Complete",
