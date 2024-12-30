@@ -147,34 +147,22 @@ class Application extends React.Component {
     }
 
     /**
-     * Handling the link of the project
-     * @param {string} link
-     * @returns {HTMLElement}
+     * Rendering the component.
+     * @returns {React.Component}
      */
-    handleLink(link) {
-        if (link.includes("github")) {
-            return (
-                <a href={link} target="__blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            );
-        } else {
-            return (
-                <a href={link} target="__blank">
-                    {link}
-                </a>
-            );
-        }
-    }
-
     render() {
         return [<Header />, <Main />, <Footer />];
     }
 }
+
 /**
  * The component that is the header
  */
 class Header extends Application {
+    /**
+     * Rendering the component.
+     * @returns {React.Component}
+     */
     render() {
         return (
             <header>
@@ -186,13 +174,23 @@ class Header extends Application {
         );
     }
 }
+
 /**
  * The component that is the main
  */
 class Main extends Application {
+    /**
+     * Initializing the component.
+     * @param {*} props The properties of the components.
+     */
     constructor(props) {
         super(props);
     }
+
+    /**
+     * Rendering the Component
+     * @returns {React.Component}
+     */
     render() {
         return (
             <main>
@@ -201,7 +199,7 @@ class Main extends Application {
                         <tr>
                             <th>Year</th>
                             <th>Name</th>
-                            <th>Made At</th>
+                            <th>Made For</th>
                             <th>Built With</th>
                             <th>Link</th>
                             <th>Status</th>
@@ -210,6 +208,7 @@ class Main extends Application {
                     <tbody>
                         {this.state.projects.map((project) => {
                             const status = (project.status == "Complete") ? <i class="fa-solid fa-check"></i> : <i class="fa-solid fa-spinner fa-spin"></i>;
+                            const link = project.link.includes("github") ? <a href={project.link} target="__blank" class="github"><i class="fa-brands fa-github"></i></a> : <a href={project.link} target="__blank">{project.link}</a>;
                             return (
                                 <tr>
                                     <td>{project.year}</td>
@@ -226,7 +225,7 @@ class Main extends Application {
                                             )}
                                         </div>
                                     </td>
-                                    <td>{this.handleLink(project.link)}</td>
+                                    <td>{link}</td>
                                     <td>{status}</td>
                                 </tr>
                             );
@@ -237,10 +236,15 @@ class Main extends Application {
         );
     }
 }
+
 /**
  * The component that is the footer
  */
 class Footer extends Application {
+    /**
+     * Rendering the component
+     * @returns {React.Component}
+     */
     render() {
         return (
             <footer>
@@ -268,5 +272,6 @@ class Footer extends Application {
         );
     }
 }
+
 // Rendering the page
 ReactDOM.render(<Application />, document.body);
