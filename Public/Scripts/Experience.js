@@ -47,29 +47,6 @@ class Main extends Application {
                 </div>
                 <div id="experienceBar">
                     <div>
-                        <div>Jul 2023 - Present</div>
-                        <div>
-                            <div>Junior Software Developer - FinClub</div>
-                            <div>
-                                <p>
-                                    Maintain and improve applications that are
-                                    used internally by the company.
-                                </p>
-                            </div>
-                            <div>
-                                <div>JavaScript</div>
-                                <div>PHP</div>
-                                <div>Python</div>
-                                <div>MySQL</div>
-                                <div>Linux</div>
-                                <div>ExpressJS</div>
-                                <div>Selenium</div>
-                                <div>React</div>
-                                <div>Angular</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
                         <div>2020 - Present</div>
                         <div>
                             <div>Freelance Full-Stack Web Developer</div>
@@ -109,6 +86,32 @@ class Main extends Application {
                                 <div>MySQL</div>
                                 <div>Linux</div>
                                 <div>React</div>
+                                <div>Linux</div>
+                                <div>Selenium</div>
+                                <div>DevOps</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>Jul 2023 - Dec 2024</div>
+                        <div>
+                            <div>Junior Software Developer - FinClub</div>
+                            <div>
+                                <p>
+                                    Maintain and improve applications that are
+                                    used internally by the company.
+                                </p>
+                            </div>
+                            <div>
+                                <div>JavaScript</div>
+                                <div>PHP</div>
+                                <div>Python</div>
+                                <div>MySQL</div>
+                                <div>Linux</div>
+                                <div>ExpressJS</div>
+                                <div>Selenium</div>
+                                <div>React</div>
+                                <div>Angular</div>
                             </div>
                         </div>
                     </div>
