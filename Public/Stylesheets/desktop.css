@@ -498,10 +498,7 @@ body {
 #Archive main table tbody tr td:nth-child(6) {
     width: calc(var(--table-width) * (5 / 100));
 }
-#Archive main table tbody tr td:nth-child(1),
-#Archive main table tbody tr td:nth-child(2),
-#Archive main table tbody tr td:nth-child(3),
-#Archive main table tbody tr td:nth-child(5) {
+#Archive main table tbody tr td a {
     font-size: calc(var(--textSize) * (16 / 16));
     letter-spacing: calc(var(--table-body-width) / 1000);
 }
@@ -527,14 +524,9 @@ body {
         calc(var(--table-data-fourth-width) / 100);
     letter-spacing: calc(var(--table-data-fourth-width) / 250);
 }
-#Archive main table tbody tr:nth-child(4) td:nth-child(5) a,
-#Archive main table tbody tr:nth-child(9) td:nth-child(5) a {
+#Archive main table tbody tr td a.github {
     font-size: calc(var(--textSize) * (40 / 16));
 }
 #Archive main table tbody tr td:nth-child(6) {
-    font-size: calc(var(--textSize) * (30 / 16));
-}
-#Archive main table tbody tr:nth-child(6) td:nth-child(5) a,
-#Archive main table tbody tr:nth-child(10) td:nth-child(5) a {
     font-size: calc(var(--textSize) * (30 / 16));
 }
