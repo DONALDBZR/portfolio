@@ -11,8 +11,22 @@ class Application extends React.Component {
         this.state = {
             projects: [
                 {
+                    year: 2025,
+                    name: "Extractio",
+                    from: "OmniTechBros",
+                    technologiesUsed: [
+                        "Python",
+                        "MySQL",
+                        "Flask",
+                        "Selenium",
+                        "React",
+                    ],
+                    link: "https://omnitechbros.ddns.net:591/",
+                    status: "Development",
+                },
+                {
                     year: 2024,
-                    name: "Corporate Database Builder & Analyzer",
+                    name: "ImpactRadar",
                     from: "Darkness4869",
                     technologiesUsed: [
                         "Python",
@@ -78,20 +92,6 @@ class Application extends React.Component {
                     from: "SEDECO",
                     technologiesUsed: ["JavaScript", "PHP", "MySQL"],
                     link: "",
-                    status: "Complete",
-                },
-                {
-                    year: 2023,
-                    name: "Extractio",
-                    from: "Darkness4869",
-                    technologiesUsed: [
-                        "Python",
-                        "MySQL",
-                        "Flask",
-                        "Selenium",
-                        "React",
-                    ],
-                    link: "https://omnitechbros.ddns.net:591/",
                     status: "Complete",
                 },
                 {
