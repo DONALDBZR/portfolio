@@ -58,7 +58,7 @@ class Main extends Application {
                                 <div>
                                     <div>Extractio</div>
                                     <p>
-                                        A web application that allows anyone to currently download content from YouTube.  Moreover, it retrieves the current weekly trend based on the usage of the application by the users.
+                                        A web application that allows anyone to currently download content from YouTube.  Moreover, it retrieves the current weekly trend based on the usage of the application by the users.  Moreover, it provides an online media player to its users based on the contents that have been downloaded by them as well as access to some online radios.
                                     </p>
                                 </div>
                             </div>
