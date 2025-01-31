@@ -42,18 +42,12 @@ body {
     border-radius: calc(var(--height) / 50);
 }
 #Homepage header #button a:hover::before {
-    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2),
-        0 0 calc(var(--height) * 0.06) var(--color2),
-        0 0 calc(var(--height) * 0.12) var(--color2);
+    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2), 0 0 calc(var(--height) * 0.06) var(--color2), 0 0 calc(var(--height) * 0.12) var(--color2);
 }
 #Homepage header #button a span {
     position: absolute;
     border-radius: calc(var(--height) / 200);
-    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2),
-        0 0 calc(var(--height) * 0.04) var(--color2),
-        0 0 calc(var(--height) * 0.06) var(--color2),
-        0 0 calc(var(--height) * 0.1) var(--color2),
-        0 0 calc(var(--height) * 0.2) var(--color2);
+    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2), 0 0 calc(var(--height) * 0.04) var(--color2), 0 0 calc(var(--height) * 0.06) var(--color2), 0 0 calc(var(--height) * 0.1) var(--color2), 0 0 calc(var(--height) * 0.2) var(--color2);
 }
 #Homepage header #button a span:nth-child(1),
 #Homepage header #button a span:nth-child(3) {
@@ -121,9 +115,9 @@ body {
 #Experience main,
 #Projects main {
     --main-height: calc(var(--height) * 0.8);
+    --main-width: var(--width);
     display: flex;
     height: var(--main-height);
-    --main-width: var(--width);
 }
 #About header nav,
 #Experience header nav,
@@ -223,9 +217,9 @@ body {
     margin-top: calc(var(--main-height) * 0);
 }
 #Experience main #experienceBar {
+    --experience-bar-width: calc(var(--main-width) / 2);
     overflow: auto;
     height: var(--main-height);
-    --experience-bar-width: calc(var(--main-width) / 2);
     width: var(--experience-bar-width);
 }
 #Experience main #experienceBar::-webkit-scrollbar {
@@ -246,9 +240,9 @@ body {
     align-items: center;
 }
 #Experience main #experienceBar div div:nth-child(2) {
+    --card-width: calc(var(--experience-bar-width) * (2 / 3));
     display: block;
     height: auto;
-    --card-width: calc(var(--experience-bar-width) * (2 / 3));
     width: var(--card-width);
     margin: calc(var(--main-width) * 0);
 }
@@ -264,12 +258,7 @@ body {
     height: calc(var(--main-height) / 20);
     font-size: calc(var(--textSize) * (25 / 16));
 }
-#Experience
-    main
-    #experienceBar
-    div:nth-child(1)
-    div:nth-child(2)
-    div:nth-child(1) {
+#Experience main #experienceBar div:nth-child(1) div:nth-child(2) div:nth-child(1) {
     font-size: calc(var(--textSize) * (25 / 20));
 }
 #Experience main #experienceBar div div:nth-child(2) div:nth-child(2) {
@@ -282,13 +271,7 @@ body {
     letter-spacing: calc(var(--card-width) / 1000);
     width: var(--card-width);
 }
-#Experience
-    main
-    #experienceBar
-    div:nth-child(1)
-    div:nth-child(2)
-    div:nth-child(2)
-    p {
+#Experience main #experienceBar div:nth-child(1) div:nth-child(2) div:nth-child(2) p {
     font-size: calc(var(--textSize) * 0.8);
 }
 #Experience main #experienceBar div div:nth-child(2) div:nth-child(3) {
@@ -306,13 +289,7 @@ body {
     margin: calc(var(--main-height) / 100) calc(var(--card-width) / 100);
     border-radius: calc(var(--main-height) / 20);
 }
-#Experience
-    main
-    #experienceBar
-    div:nth-child(1)
-    div:nth-child(2)
-    div:nth-child(3)
-    div {
+#Experience main #experienceBar div:nth-child(1) div:nth-child(2) div:nth-child(3) div {
     font-size: calc(var(--textSize) * (15 / 25));
     margin: calc(var(--main-height) / 100) calc(var(--card-width) / 100);
 }
@@ -323,15 +300,16 @@ body {
 #Projects main div:nth-child(2) {
     --projects-width: calc(var(--main-width) / 2);
     --projects-height: var(--main-height);
+    overflow: auto;
 }
 #Projects main div:nth-child(2) .project {
     height: auto;
     width: var(--projects-width);
 }
 #Projects main div:nth-child(2) .project a {
+    --card-width: var(--projects-width);
     display: block;
     height: auto;
-    --card-width: var(--projects-width);
     width: var(--card-width);
     margin: calc(var(--projects-height) / 50) calc(var(--card-width) * 0);
 }
@@ -372,14 +350,7 @@ body {
     justify-content: normal;
     padding: calc(var(--card-width) * 0);
 }
-#Projects
-    main
-    div:nth-child(2)
-    .project:nth-child(1)
-    a
-    div
-    div:nth-child(2)
-    div {
+#Projects main div:nth-child(2) .project:nth-child(1) a div div:nth-child(2) div {
     font-size: calc(var(--textSize) * (20 / 50));
 }
 #Projects main div:nth-child(2) .project a div div:nth-child(2) p {
@@ -448,15 +419,16 @@ body {
     width: calc(var(--table-width) / 6);
 }
 #Archive main table tbody {
-    display: block;
     --table-body-width: var(--table-width);
     --table-body-height: calc(var(--table-height) * (19 / 20));
+    display: block;
     width: var(--table-body-width);
     height: var(--table-body-height);
     overflow: auto;
 }
 #Archive::-webkit-scrollbar,
-#Archive main table tbody::-webkit-scrollbar {
+#Archive main table tbody::-webkit-scrollbar,
+#Projects main div:nth-child(2)::-webkit-scrollbar {
     display: none;
 }
 #Archive main table tbody tr {
@@ -520,8 +492,7 @@ body {
     justify-content: center;
     width: calc(var(--table-data-fourth-width) / 4);
     border-radius: calc(var(--table-body-height) / 30);
-    margin: calc(var(--table-body-height) / 100)
-        calc(var(--table-data-fourth-width) / 100);
+    margin: calc(var(--table-body-height) / 100) calc(var(--table-data-fourth-width) / 100);
     letter-spacing: calc(var(--table-data-fourth-width) / 250);
 }
 #Archive main table tbody tr td a.github {
@@ -529,4 +500,7 @@ body {
 }
 #Archive main table tbody tr td:nth-child(6) {
     font-size: calc(var(--textSize) * (30 / 16));
+}
+#Projects main div:nth-child(1) div:nth-child(2) {
+    overflow: unset;
 }
