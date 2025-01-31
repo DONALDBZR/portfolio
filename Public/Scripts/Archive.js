@@ -25,6 +25,16 @@ class Application extends React.Component {
                     status: "Development",
                 },
                 {
+                    year: 2025,
+                    name: "Guara",
+                    from: "Douglas Cardoso",
+                    technologiesUsed: [
+                        "Python",
+                    ],
+                    link: "https://github.com/douglasdcm/guara",
+                    status: "Development",
+                },
+                {
                     year: 2024,
                     name: "ImpactRadar",
                     from: "Darkness4869",
