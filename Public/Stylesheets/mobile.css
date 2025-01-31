@@ -39,18 +39,12 @@ body {
     border-radius: calc(var(--height) / 50);
 }
 #Homepage header #button a:hover::before {
-    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2),
-        0 0 calc(var(--height) * 0.06) var(--color2),
-        0 0 calc(var(--height) * 0.12) var(--color2);
+    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2), 0 0 calc(var(--height) * 0.06) var(--color2), 0 0 calc(var(--height) * 0.12) var(--color2);
 }
 #Homepage header #button a span {
     position: absolute;
     border-radius: calc(var(--height) / 200);
-    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2),
-        0 0 calc(var(--height) * 0.04) var(--color2),
-        0 0 calc(var(--height) * 0.06) var(--color2),
-        0 0 calc(var(--height) * 0.1) var(--color2),
-        0 0 calc(var(--height) * 0.2) var(--color2);
+    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2), 0 0 calc(var(--height) * 0.04) var(--color2), 0 0 calc(var(--height) * 0.06) var(--color2), 0 0 calc(var(--height) * 0.1) var(--color2), 0 0 calc(var(--height) * 0.2) var(--color2);
 }
 #Homepage header #button a span:nth-child(1),
 #Homepage header #button a span:nth-child(3) {
@@ -273,12 +267,7 @@ body {
     font-size: calc(var(--textSize) * (20 / 28.345));
     height: calc(var(--experience-bar-height) / 10);
 }
-#Experience
-    main
-    #experienceBar
-    div:nth-child(1)
-    div:nth-child(2)
-    div:nth-child(1) {
+#Experience main #experienceBar div:nth-child(1) div:nth-child(2) div:nth-child(1) {
     font-size: calc(var(--textSize) * (20 / 26.62));
 }
 #Experience main #experienceBar div div:nth-child(2) div:nth-child(2) {
@@ -286,17 +275,10 @@ body {
 }
 #Experience main #experienceBar div div:nth-child(2) div:nth-child(2) p {
     font-size: calc(var(--textSize) * (20 / 28.345));
-    margin: calc(var(--experience-bar-height) / 50)
-        calc(var(--experience-bar-width) * 0);
+    margin: calc(var(--experience-bar-height) / 50) calc(var(--experience-bar-width) * 0);
     letter-spacing: calc(var(--experience-bar-width) / 500);
 }
-#Experience
-    main
-    #experienceBar
-    div:nth-child(1)
-    div:nth-child(2)
-    div:nth-child(2)
-    p {
+#Experience main #experienceBar div:nth-child(1) div:nth-child(2) div:nth-child(2) p {
     font-size: calc(var(--textSize) * (20 / 25));
 }
 #Experience main #experienceBar div div:nth-child(2) div:nth-child(3) {
@@ -307,18 +289,11 @@ body {
     height: calc(var(--experience-bar-height) / 10);
     justify-content: center;
     width: calc(var(--experience-bar-width) / 4);
-    margin: calc(var(--experience-bar-height) / 100)
-        calc(var(--experience-bar-width) / 100);
+    margin: calc(var(--experience-bar-height) / 100) calc(var(--experience-bar-width) / 100);
     border-radius: calc(var(--experience-bar-height) / 20);
     align-items: center;
 }
-#Experience
-    main
-    #experienceBar
-    div:nth-child(1)
-    div:nth-child(2)
-    div:nth-child(3)
-    div {
+#Experience main #experienceBar div:nth-child(1) div:nth-child(2) div:nth-child(3) div {
     font-size: calc(var(--textSize) * (15 / 25));
 }
 #Projects main div:nth-child(1) {
@@ -329,7 +304,7 @@ body {
     align-items: center;
 }
 #Projects main div:nth-child(1) div:nth-child(1) {
-    font-size: calc(var(--textSize) * (40 / 28.345));
+    font-size: calc(var(--textSize) * (32 / 28.345));
     height: calc(var(--main-height) / 10);
 }
 #Projects main div:nth-child(1) div:nth-child(2),
@@ -342,9 +317,9 @@ body {
     height: calc(var(--main-height) / 10);
 }
 #Projects main div:nth-child(2) {
-    height: var(--projects-height);
     --projects-height: calc(var(--main-height) * 0.75);
     --projects-width: var(--main-width);
+    height: var(--projects-height);
     overflow: auto;
 }
 #Projects main div:nth-child(2)::-webkit-scrollbar,
@@ -367,8 +342,8 @@ body {
     border-radius: calc(var(--projects-height) / 12.5);
 }
 #Projects main div:nth-child(2) .project a div div {
-    width: var(--card-width);
     --card-width: calc(var(--projects-width) / 2);
+    width: var(--card-width);
     height: auto;
 }
 #Projects main div:nth-child(2) .project a div div:nth-child(1) {
@@ -383,21 +358,13 @@ body {
 }
 #Projects main div:nth-child(2) .project a div div:nth-child(2) {
     display: block;
-    border-radius: calc(var(--projects-height) * 0) calc(var(--height) / 12.5)
-        calc(var(--projects-height) / 12.5) calc(var(--projects-height) * 0);
+    border-radius: calc(var(--projects-height) * 0) calc(var(--height) / 12.5) calc(var(--projects-height) / 12.5) calc(var(--projects-height) * 0);
 }
 #Projects main div:nth-child(2) .project a div div:nth-child(2) div {
     font-size: calc(var(--textSize) * (20 / 26.62));
     height: auto;
 }
-#Projects
-    main
-    div:nth-child(2)
-    .project:nth-child(1)
-    a
-    div
-    div:nth-child(2)
-    div {
+#Projects main div:nth-child(2) .project:nth-child(1) a div div:nth-child(2) div {
     font-size: calc(var(--textSize) * (20 / 50));
 }
 #Projects main div:nth-child(2) .project a div div:nth-child(2) p {
@@ -445,9 +412,9 @@ body {
     width: var(--main-width);
 }
 #Archive main table {
-    display: block;
     --table-height: var(--main-height);
     --table-width: var(--main-width);
+    display: block;
     height: var(--table-height);
     width: var(--table-width);
 }
@@ -497,8 +464,8 @@ body {
     content: "Built With: ";
 }
 #Archive main table tbody tr td:nth-child(4) div {
-    display: flex;
     --cell-width: calc(var(--table-width) * (3 / 4));
+    display: flex;
     flex-wrap: wrap;
     width: var(--cell-width);
     justify-content: space-evenly;
