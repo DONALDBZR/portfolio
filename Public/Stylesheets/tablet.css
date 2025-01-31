@@ -8,6 +8,7 @@ body {
     width: var(--width);
     margin: calc(var(--height) * 0) calc(var(--width) * 0);
     font-size: var(--textSize);
+    overflow: hidden;
 }
 #Homepage header #button {
     height: var(--height);
@@ -39,18 +40,12 @@ body {
     border-radius: calc(var(--height) / 50);
 }
 #Homepage header #button a:hover::before {
-    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2),
-        0 0 calc(var(--height) * 0.06) var(--color2),
-        0 0 calc(var(--height) * 0.12) var(--color2);
+    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2), 0 0 calc(var(--height) * 0.06) var(--color2), 0 0 calc(var(--height) * 0.12) var(--color2);
 }
 #Homepage header #button a span {
     position: absolute;
     border-radius: calc(var(--height) / 200);
-    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2),
-        0 0 calc(var(--height) * 0.04) var(--color2),
-        0 0 calc(var(--height) * 0.06) var(--color2),
-        0 0 calc(var(--height) * 0.1) var(--color2),
-        0 0 calc(var(--height) * 0.2) var(--color2);
+    box-shadow: 0 0 calc(var(--height) * 0.02) var(--color2), 0 0 calc(var(--height) * 0.04) var(--color2), 0 0 calc(var(--height) * 0.06) var(--color2), 0 0 calc(var(--height) * 0.1) var(--color2), 0 0 calc(var(--height) * 0.2) var(--color2);
 }
 #Homepage header #button a span:nth-child(1),
 #Homepage header #button a span:nth-child(3) {
@@ -114,17 +109,17 @@ body {
 #About main,
 #Experience main,
 #Projects main {
-    height: var(--main-height);
     --main-height: calc(var(--height) * 0.8);
     --main-width: var(--width);
+    height: var(--main-height);
 }
 #About footer,
 #Experience footer,
 #Projects footer,
 #Archive footer {
-    display: flex;
     --footer-height: calc(var(--height) / 10);
     --footer-width: var(--width);
+    display: flex;
     align-items: center;
 }
 #About header,
@@ -233,8 +228,8 @@ body {
     display: none;
 }
 #Experience main #experienceBar div {
-    display: flex;
     --card-width: var(--experience-bar-width);
+    display: flex;
     height: auto;
 }
 #Experience main #experienceBar div div {
@@ -264,16 +259,11 @@ body {
     height: auto;
 }
 #Experience main #experienceBar div div:nth-child(2) div:nth-child(3) {
-    flex-wrap: wrap;
     --skills-width: calc(var(--card-width) * (3 / 4));
+    flex-wrap: wrap;
     height: calc(var(--experience-bar-height) * 0.14);
 }
-#Experience
-    main
-    #experienceBar
-    div:nth-child(1)
-    div:nth-child(2)
-    div:nth-child(1) {
+#Experience main #experienceBar div:nth-child(1) div:nth-child(2) div:nth-child(1) {
     font-size: calc(var(--textSize) * (25 / 22));
 }
 #Experience main #experienceBar div div:nth-child(2) div:nth-child(2) p {
@@ -281,13 +271,7 @@ body {
     height: auto;
     margin: calc(var(--experience-bar-height) / 100) calc(var(--card-width) * 0);
 }
-#Experience
-    main
-    #experienceBar
-    div:nth-child(1)
-    div:nth-child(2)
-    div:nth-child(2)
-    p {
+#Experience main #experienceBar div:nth-child(1) div:nth-child(2) div:nth-child(2) p {
     font-size: calc(var(--textSize) * (20 / 25));
 }
 #Experience main #experienceBar div div:nth-child(2) div:nth-child(3) div {
@@ -296,17 +280,10 @@ body {
     align-items: center;
     width: calc(var(--skills-width) / 5);
     height: calc(var(--experience-bar-height) / 20);
-    margin: calc(var(--experience-bar-height) / 100)
-        calc(var(--skills-width) / 100);
+    margin: calc(var(--experience-bar-height) / 100) calc(var(--skills-width) / 100);
     border-radius: calc(var(--experience-bar-height) / 40);
 }
-#Experience
-    main
-    #experienceBar
-    div:nth-child(1)
-    div:nth-child(2)
-    div:nth-child(3)
-    div {
+#Experience main #experienceBar div:nth-child(1) div:nth-child(2) div:nth-child(3) div {
     font-size: calc(var(--textSize) * (20 / 25));
 }
 #Experience main #experienceBar div:nth-child(5) {
@@ -324,17 +301,17 @@ body {
     align-items: center;
 }
 #Projects main div:nth-child(1) div:nth-child(1) {
-    font-size: calc(var(--textSize) * (40 / 19.36));
+    font-size: calc(var(--textSize) * (32 / 19.36));
     height: calc(var(--main-height) / 15);
 }
 #Projects main div:nth-child(1) div:nth-child(2),
 #Projects main div:nth-child(1) div:nth-child(3) {
-    font-size: calc(var(--textSize) * (20 / 19.36));
+    font-size: calc(var(--textSize) * (16 / 19.36));
     letter-spacing: calc(var(--main-width) / 500);
     height: calc(var(--main-height) / 30);
 }
 #Projects main div:nth-child(2) {
-    height: calc(var(--main-height) * (13 / 15));
+    height: calc(var(--main-height) * (12 / 15));
     overflow: auto;
 }
 #Projects main div:nth-child(2)::-webkit-scrollbar,
@@ -343,7 +320,7 @@ body {
 }
 #Projects main div:nth-child(2) .project {
     height: auto;
-    margin: calc(var(--main-height) / 50) calc(var(--main-width) * 0);
+    margin: calc(var(--main-height) / 100) calc(var(--main-width) * 0);
 }
 #Projects main div:nth-child(2) .project a div {
     height: auto;
@@ -375,14 +352,7 @@ body {
     justify-content: start;
     height: calc(var(--main-height) / 22.5);
 }
-#Projects
-    main
-    div:nth-child(2)
-    .project:nth-child(1)
-    a
-    div
-    div:nth-child(2)
-    div {
+#Projects main div:nth-child(2) .project:nth-child(1) a div div:nth-child(2) div {
     font-size: calc(var(--textSize) * (30 / 50));
 }
 #Projects main div:nth-child(2) .project a div div:nth-child(2) p {
@@ -469,8 +439,8 @@ body {
     height: calc(var(--table-height) / 30);
 }
 #Archive main table tbody tr td:nth-child(4) div {
-    display: flex;
     --cell-width: calc(var(--table-width) * (6 / 7));
+    display: flex;
     width: var(--cell-width);
     justify-content: space-evenly;
     align-items: center;
@@ -502,4 +472,7 @@ body {
 }
 #Archive main table tbody tr td:nth-child(6)::before {
     content: "Status: ";
+}
+#Projects main div:nth-child(1) div:nth-child(2) {
+    overflow: unset;
 }
