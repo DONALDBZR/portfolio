@@ -64,6 +64,24 @@ class Main extends Application {
                             </div>
                         </a>
                     </div>
+                    <div class="project">
+                        <a
+                            href="https://pypi.org/project/guara/"
+                            target="__blank"
+                        >
+                            <div>
+                                <div>
+                                    <img src="/Public/Images/Guara.png" />
+                                </div>
+                                <div>
+                                    <div>Guará</div>
+                                    <p>
+                                        It is a framework to build user-interface testing automation in Page Transactions pattern.  It is a Python package that allows the user to build a test suite for their user-interfaces.  It is a simple and easy-to-use package that allows the user to build a test suite for their user-interfaces.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                     <div id="archive">
                         <a href="/Archive">View Full Project Archive</a>
                     </div>
